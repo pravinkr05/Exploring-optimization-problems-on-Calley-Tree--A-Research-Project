@@ -48,7 +48,7 @@ Cayley trees have gained significance in various domains, particularly in optimi
 
 ## Contributors
 Pravin Raj  <br/>
-Note: This project is intended for showcase purposes only, and contributions are not currently accepted. You are free to use and explore the code under the terms of the MIT License.
+Note: This project is intended for showcase purposes only, and contributions are currently accepted. You are free to use and explore the code under the terms of the MIT License.
 
 ## License
 This project is licensed under the [MIT License](LICENSE.md).
