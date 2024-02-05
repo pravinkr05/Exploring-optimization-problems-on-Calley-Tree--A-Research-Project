@@ -125,10 +125,9 @@ public:
 		  {
 			cout << "{M:";
 			printArray (temp->memory);
-			cout << ",F:" << temp->flag[0] << temp->
-			  flag[1] << temp->flag[2] << ",U:" << temp->
-			  flag[3] << ",S:" << temp->state << ",C:" << temp->
-			  counter << "}  ";
+			cout << ",F:" << temp->flag[0] << temp->flag[1] << temp->
+			  flag[2] << ",U:" << temp->flag[3] << ",S:" << temp->
+			  state << ",C:" << temp->counter << "}  ";
 			if (temp->left)
 			  {
 				q.push (temp->left);
@@ -372,22 +371,20 @@ public:
 
 					if (ind < bitSize)
 					  {
-
-						if (curr->flag[3] == 0)
-						  {
-							curr->flag[3] = 1;
-							curr->state = curr->flag[3];
-						  }
-						else
-						  {
-							int m = copy->memory[ind];
-							curr->flag[0] = 1;
-							curr->flag[1] = 1;
-							curr->flag[2] = 0;
-							fun (curr, 0, m, 0);
-							curr->counter = ind + 1;
-						  }
-
+						
+						if(curr->flag[3]==0){
+						   curr->flag[3] = 1; 
+						   curr->state = curr->flag[3];
+						}
+                        else{
+                            int m = copy->memory[ind];
+    						curr->flag[0] = 1;
+    						curr->flag[1] = 1;
+    						curr->flag[2] = 0;
+    						fun (curr, 0, m, 0);
+    						curr->counter = ind + 1;
+                        }
+                        
 					  }
 
 
@@ -401,23 +398,22 @@ public:
 
 					if (ind < bitSize)
 					  {
-
+					      
 						int l = copy->left->state;
 						int r = copy->right->state;
-
-						if (copy->flag[3] == 0)
-						  {
-							if (l && r)
-							  {
-								curr->flag[3] = 1;
-								curr->state = 1;;
-							  }
+						
+						if(copy->flag[3]==0){
+						    if(l && r)
+						  { 
+						   curr->flag[3] = 1;
+						   curr->state = 1;; 
 						  }
+						}
 						else
 						  {
-
-							curr->state = curr->memory[ind];
-							int m = curr->state;
+						     
+						    curr->state = curr->memory[ind];
+						    int m = curr->state;
 							fun (curr, l, m, r);
 							curr->counter = ind + 1;
 						  }
@@ -434,19 +430,18 @@ public:
 						int l = copy->left->state;
 						int r = copy->right->state;
 						int m = copy->middle->state;
-
-						if (copy->flag[3] == 0)
+					
+						if(copy->flag[3]==0){
+						   if(l&&r&&m)
+						   {
+						   curr->flag[3] = 1;
+						   curr->state = curr->flag[3]; 
+						       
+						   }
+						}
+                       else
 						  {
-							if (l && r && m)
-							  {
-								curr->flag[3] = 1;
-								curr->state = curr->flag[3];
-
-							  }
-						  }
-						else
-						  {
-
+						     
 							fun (curr, l, m, r);
 							curr->memory[ind] = curr->state;
 							curr->counter = ind + 1;
@@ -455,7 +450,7 @@ public:
 				  }
 			  }
 		  }
-		cout << endl;
+        cout<<endl;
 		levelOrder ();
 		clock++;
 		if (root->counter == bitSize)
@@ -465,8 +460,8 @@ public:
 	  endl;
 	cout << "Searching Executed Successfully..." << endl << endl;
 
-  }
-
+  }		
+  
 };
 
 
@@ -474,36 +469,48 @@ int
 main ()
 {
 
-
+ 
   int height = 3;
-  // int totalNodes = 3*pow(2,height-1)-2;
-  // cout<<totalNodes; 
+   bitSize = 4;
+   int totalNodes = 3*pow(2,height-1)-2;
+   cout<<"Height of the Tree: "<<height<<endl;
+   cout<<"Total Nodes: "<<totalNodes<<endl; 
+   cout<<"Memory bitSize: "<<bitSize<<endl;
 
-  // int a = 10;
-  // int b=120;
+  int a = 1;
+  int b=16;
 
-  // vector<int> seq;
+   vector<int> seq;
 
-  // for(int i=1;i<totalNodes;i++){
-  //   int temp = rand() % (801) + 200;
-  //   seq.push_back(temp);
-  // }
+   for(int i=1;i<totalNodes;i++){
+     int temp = rand() % (b-a) + a;
+     seq.push_back(temp);
+   }
+
 
 
 
 //   vector < int >seq = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,14,9,10,11,12,13,14};   //bit size = 4
-  vector < int >seq = { 11, 12, 14, 2, 3, 6, 12, 5, 7 };
-  bitSize = 4;
+//   vector < int >seq = { 11, 12, 14, 8, 3, 6, 12, 0, 7 };
+ 
 
 
   random_device rd;
   default_random_engine rng (rd ());
   shuffle (seq.begin (), seq.end (), rng);
-//     for (int i = 0; i < seq.size (); i++)
-//       {
-//  cout << seq[i] <<" ";
-//       }
 
+
+  cout << endl<< "sequence value : ";
+
+  int w = INT_MAX;
+  for (int i = 0; i < seq.size (); i++)
+	{
+	  w = min(w, seq[i]);
+	  cout<<seq[i]<<" ";
+	}
+  cout <<"\nMin Value: "<< w;
+
+	
   cayleyTree T;
 
   T.buildTree (seq);
@@ -517,14 +524,10 @@ main ()
   cout << "Final State: " << endl;
   T.levelOrder ();
 
-  cout << endl;
-
-  int w = -1;
-  for (int i = 0; i < seq.size (); i++)
-	{
-	  w = max (w, seq[i]);
-	}
-  cout << w;
+  
   return 0;
 
 }
+
+
+
