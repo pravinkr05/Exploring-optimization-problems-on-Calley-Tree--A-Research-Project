@@ -7,7 +7,7 @@ class Node
 {
 public:
   int state;
-    vector < int >memory;
+  vector < int >memory;
 
   int flag[4];
   int data;
@@ -371,22 +371,20 @@ public:
 
 					if (ind < bitSize)
 					  {
-
-						if (curr->flag[3] == 0)
-						  {
-							curr->flag[3] = 1;
-							curr->state = curr->flag[3];
-						  }
-						else
-						  {
-							int m = copy->memory[ind];
-							curr->flag[0] = 1;
-							curr->flag[1] = 1;
-							curr->flag[2] = 0;
-							fun (curr, 0, m, 0);
-							curr->counter = ind + 1;
-						  }
-
+						
+						if(curr->flag[3]==0){
+						   curr->flag[3] = 1; 
+						   curr->state = curr->flag[3];
+						}
+                        else{
+                            int m = copy->memory[ind];
+    						curr->flag[0] = 1;
+    						curr->flag[1] = 1;
+    						curr->flag[2] = 0;
+    						fun (curr, 0, m, 0);
+    						curr->counter = ind + 1;
+                        }
+                        
 					  }
 
 
@@ -400,23 +398,22 @@ public:
 
 					if (ind < bitSize)
 					  {
-
+					      
 						int l = copy->left->state;
 						int r = copy->right->state;
-
-						if (copy->flag[3] == 0)
-						  {
-							if (l && r)
-							  {
-								curr->flag[3] = 1;
-								curr->state = 1;;
-							  }
+						
+						if(copy->flag[3]==0){
+						    if(l && r)
+						  { 
+						   curr->flag[3] = 1;
+						   curr->state = 1;; 
 						  }
+						}
 						else
 						  {
-
-							curr->state = curr->memory[ind];
-							int m = curr->state;
+						     
+						    curr->state = curr->memory[ind];
+						    int m = curr->state;
 							fun (curr, l, m, r);
 							curr->counter = ind + 1;
 						  }
@@ -433,19 +430,18 @@ public:
 						int l = copy->left->state;
 						int r = copy->right->state;
 						int m = copy->middle->state;
-
-						if (copy->flag[3] == 0)
+					
+						if(copy->flag[3]==0){
+						   if(l&&r&&m)
+						   {
+						   curr->flag[3] = 1;
+						   curr->state = curr->flag[3]; 
+						       
+						   }
+						}
+                       else
 						  {
-							if (l && r && m)
-							  {
-								curr->flag[3] = 1;
-								curr->state = curr->flag[3];
-
-							  }
-						  }
-						else
-						  {
-
+						     
 							fun (curr, l, m, r);
 							curr->memory[ind] = curr->state;
 							curr->counter = ind + 1;
@@ -454,7 +450,7 @@ public:
 				  }
 			  }
 		  }
-		cout << endl;
+        cout<<endl;
 		levelOrder ();
 		clock++;
 		if (root->counter == bitSize)
@@ -464,7 +460,7 @@ public:
 	  endl;
 	cout << "Searching Executed Successfully..." << endl << endl;
 
-  }
+  }			
 };
 
 
@@ -473,34 +469,30 @@ main ()
 {
 
 
-  int height = 3;
-  // int totalNodes = 3*pow(2,height-1)-2;
-  // cout<<totalNodes; 
+  int height = 9;
+   int totalNodes = 3*pow(2,height-1)-2;
+   cout<<"Total Nodes: "<<totalNodes<<endl; 
 
-  // int a = 10;
-  // int b=120;
+  int a = 200;
+  int b=1000;
 
-  // vector<int> seq;
+   vector<int> seq;
 
-  // for(int i=1;i<totalNodes;i++){
-  //   int temp = rand() % (801) + 200;
-  //   seq.push_back(temp);
-  // }
+   for(int i=1;i<totalNodes;i++){
+     int temp = rand() % (b-a) + a;
+     seq.push_back(temp);
+   }
 
 
 
 //   vector < int >seq = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,14,9,10,11,12,13,14};   //bit size = 4
-  vector < int >seq = { 11, 12, 14, 8, 3, 6, 12, 0, 7 };
-  bitSize = 4;
+//   vector < int >seq = { 11, 12, 14, 8, 3, 6, 12, 0, 7 };
+  bitSize = 10;
 
 
   random_device rd;
   default_random_engine rng (rd ());
   shuffle (seq.begin (), seq.end (), rng);
-//     for (int i = 0; i < seq.size (); i++)
-//       {
-//  cout << seq[i] <<" ";
-//       }
 
   cayleyTree T;
 
@@ -515,14 +507,18 @@ main ()
   cout << "Final State: " << endl;
   T.levelOrder ();
 
-  cout << endl;
+  cout << endl<< "sequence value : ";
 
   int w = -1;
   for (int i = 0; i < seq.size (); i++)
 	{
 	  w = max (w, seq[i]);
+	  cout<<seq[i]<<" ";
 	}
-  cout << w;
+  cout <<"\nMax Value: "<< w;
   return 0;
 
 }
+
+
+
