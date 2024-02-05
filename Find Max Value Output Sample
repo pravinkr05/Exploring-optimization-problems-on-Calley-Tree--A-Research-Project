@@ -1,0 +1,909 @@
+OUTPUT :
+
+Case 1 - Max Value Output Sample Example - 1,2,3.
+
+
+=======================================================================================================================================================================================
+Example - 1: 
+
+Total Nodes: 10
+
+sequence value : 13 11 2 13 10 14 9 11 2 
+Max Value: 14
+
+Initial State: 
+{M:0000,F:000,U:0,S:0,C:0}  
+
+{M:1101,F:000,U:0,S:0,C:0}  {M:1011,F:000,U:0,S:0,C:0}  {M:0010,F:000,U:0,S:0,C:0}  
+
+{M:1101,F:000,U:0,S:0,C:0}  {M:1010,F:000,U:0,S:0,C:0}  {M:1110,F:000,U:0,S:0,C:0}  {M:1001,F:000,U:0,S:0,C:0}  {M:1011,F:000,U:0,S:0,C:0}  {M:0010,F:000,U:0,S:0,C:0}  
+
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 0
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:0000,F:000,U:0,S:0,C:0}  
+
+{M:1101,F:000,U:0,S:0,C:0}  {M:1011,F:000,U:0,S:0,C:0}  {M:0010,F:000,U:0,S:0,C:0}  
+
+{M:1101,F:000,U:1,S:1,C:0}  {M:1010,F:000,U:1,S:1,C:0}  {M:1110,F:000,U:1,S:1,C:0}  {M:1001,F:000,U:1,S:1,C:0}  {M:1011,F:000,U:1,S:1,C:0}  {M:0010,F:000,U:1,S:1,C:0}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 1
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:0000,F:000,U:0,S:0,C:0}  
+
+{M:1101,F:000,U:1,S:1,C:0}  {M:1011,F:000,U:1,S:1,C:0}  {M:0010,F:000,U:1,S:1,C:0}  
+
+{M:1101,F:110,U:1,S:1,C:1}  {M:1010,F:110,U:1,S:1,C:1}  {M:1110,F:110,U:1,S:1,C:1}  {M:1001,F:110,U:1,S:1,C:1}  {M:1011,F:110,U:1,S:1,C:1}  {M:0010,F:110,U:1,S:0,C:1}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 2
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:0000,F:000,U:1,S:1,C:0}  
+
+{M:1101,F:000,U:1,S:1,C:1}  {M:1011,F:000,U:1,S:1,C:1}  {M:0010,F:011,U:1,S:1,C:1}  
+
+{M:1101,F:110,U:1,S:1,C:2}  {M:1010,F:110,U:1,S:0,C:2}  {M:1110,F:110,U:1,S:1,C:2}  {M:1001,F:110,U:1,S:0,C:2}  {M:1011,F:110,U:1,S:0,C:2}  {M:0010,F:110,U:1,S:0,C:2}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 3
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:1000,F:000,U:1,S:1,C:1}  
+
+{M:1101,F:010,U:1,S:1,C:2}  {M:1011,F:011,U:1,S:1,C:2}  {M:0010,F:011,U:1,S:0,C:2}  
+
+{M:1101,F:110,U:1,S:0,C:3}  {M:1010,F:110,U:1,S:1,C:3}  {M:1110,F:110,U:1,S:1,C:3}  {M:1001,F:110,U:1,S:0,C:3}  {M:1011,F:110,U:1,S:1,C:3}  {M:0010,F:110,U:1,S:1,C:3}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 4
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:1100,F:001,U:1,S:1,C:2}  
+
+{M:1101,F:010,U:1,S:0,C:3}  {M:1011,F:011,U:1,S:1,C:3}  {M:0010,F:011,U:1,S:1,C:3}  
+
+{M:1101,F:110,U:1,S:1,C:4}  {M:1010,F:110,U:1,S:0,C:4}  {M:1110,F:110,U:1,S:0,C:4}  {M:1001,F:110,U:1,S:1,C:4}  {M:1011,F:110,U:1,S:1,C:4}  {M:0010,F:110,U:1,S:0,C:4}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 5
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:1110,F:101,U:1,S:1,C:3}  
+
+{M:1101,F:010,U:1,S:1,C:4}  {M:1011,F:011,U:1,S:0,C:4}  {M:0010,F:011,U:1,S:1,C:4}  
+
+{M:1101,F:110,U:1,S:1,C:4}  {M:1010,F:110,U:1,S:0,C:4}  {M:1110,F:110,U:1,S:0,C:4}  {M:1001,F:110,U:1,S:1,C:4}  {M:1011,F:110,U:1,S:1,C:4}  {M:0010,F:110,U:1,S:0,C:4}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 6
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:1110,F:101,U:1,S:0,C:4}  
+
+{M:1101,F:010,U:1,S:1,C:4}  {M:1011,F:011,U:1,S:0,C:4}  {M:0010,F:011,U:1,S:1,C:4}  
+
+{M:1101,F:110,U:1,S:1,C:4}  {M:1010,F:110,U:1,S:0,C:4}  {M:1110,F:110,U:1,S:0,C:4}  {M:1001,F:110,U:1,S:1,C:4}  {M:1011,F:110,U:1,S:1,C:4}  {M:0010,F:110,U:1,S:0,C:4}  
+
+-------------------------------------------------------------
+Searching Executed Successfully...
+
+Final State: 
+{M:1110,F:101,U:1,S:0,C:4}  
+
+{M:1101,F:010,U:1,S:1,C:4}  {M:1011,F:011,U:1,S:0,C:4}  {M:0010,F:011,U:1,S:1,C:4}  
+
+{M:1101,F:110,U:1,S:1,C:4}  {M:1010,F:110,U:1,S:0,C:4}  {M:1110,F:110,U:1,S:0,C:4}  {M:1001,F:110,U:1,S:1,C:4}  {M:1011,F:110,U:1,S:1,C:4}  {M:0010,F:110,U:1,S:0,C:4}  
+
+
+
+
+
+
+=======================================================================================================================================================================================
+Example 2: 
+
+Total Nodes: 46
+
+sequence value : 10 36 1 46 19 52 13 17 59 53 37 11 31 20 42 14 26 16 2 57 62 55 2 42 34 41 11 27 17 31 18 24 6 27 60 8 26 25 16 42 51 45 2 50 38 
+Max Value: 62
+
+Initial State: 
+{M:000000,F:000,U:0,S:0,C:0}  
+
+{M:001010,F:000,U:0,S:0,C:0}  {M:100100,F:000,U:0,S:0,C:0}  {M:000001,F:000,U:0,S:0,C:0}  
+
+{M:101110,F:000,U:0,S:0,C:0}  {M:010011,F:000,U:0,S:0,C:0}  {M:110100,F:000,U:0,S:0,C:0}  {M:001101,F:000,U:0,S:0,C:0}  {M:010001,F:000,U:0,S:0,C:0}  {M:111011,F:000,U:0,S:0,C:0}  
+
+{M:110101,F:000,U:0,S:0,C:0}  {M:100101,F:000,U:0,S:0,C:0}  {M:001011,F:000,U:0,S:0,C:0}  {M:011111,F:000,U:0,S:0,C:0}  {M:010100,F:000,U:0,S:0,C:0}  {M:101010,F:000,U:0,S:0,C:0}  {M:001110,F:000,U:0,S:0,C:0}  {M:011010,F:000,U:0,S:0,C:0}  {M:010000,F:000,U:0,S:0,C:0}  {M:000010,F:000,U:0,S:0,C:0}  {M:111001,F:000,U:0,S:0,C:0}  {M:111110,F:000,U:0,S:0,C:0}  
+
+{M:110111,F:000,U:0,S:0,C:0}  {M:000010,F:000,U:0,S:0,C:0}  {M:101010,F:000,U:0,S:0,C:0}  {M:100010,F:000,U:0,S:0,C:0}  {M:101001,F:000,U:0,S:0,C:0}  {M:001011,F:000,U:0,S:0,C:0}  {M:011011,F:000,U:0,S:0,C:0}  {M:010001,F:000,U:0,S:0,C:0}  {M:011111,F:000,U:0,S:0,C:0}  {M:010010,F:000,U:0,S:0,C:0}  {M:011000,F:000,U:0,S:0,C:0}  {M:000110,F:000,U:0,S:0,C:0}  {M:011011,F:000,U:0,S:0,C:0}  {M:111100,F:000,U:0,S:0,C:0}  {M:001000,F:000,U:0,S:0,C:0}  {M:011010,F:000,U:0,S:0,C:0}  {M:011001,F:000,U:0,S:0,C:0}  {M:010000,F:000,U:0,S:0,C:0}  {M:101010,F:000,U:0,S:0,C:0}  {M:110011,F:000,U:0,S:0,C:0}  {M:101101,F:000,U:0,S:0,C:0}  {M:000010,F:000,U:0,S:0,C:0}  {M:110010,F:000,U:0,S:0,C:0}  {M:100110,F:000,U:0,S:0,C:0}  
+
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 0
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:000000,F:000,U:0,S:0,C:0}  
+
+{M:001010,F:000,U:0,S:0,C:0}  {M:100100,F:000,U:0,S:0,C:0}  {M:000001,F:000,U:0,S:0,C:0}  
+
+{M:101110,F:000,U:0,S:0,C:0}  {M:010011,F:000,U:0,S:0,C:0}  {M:110100,F:000,U:0,S:0,C:0}  {M:001101,F:000,U:0,S:0,C:0}  {M:010001,F:000,U:0,S:0,C:0}  {M:111011,F:000,U:0,S:0,C:0}  
+
+{M:110101,F:000,U:0,S:0,C:0}  {M:100101,F:000,U:0,S:0,C:0}  {M:001011,F:000,U:0,S:0,C:0}  {M:011111,F:000,U:0,S:0,C:0}  {M:010100,F:000,U:0,S:0,C:0}  {M:101010,F:000,U:0,S:0,C:0}  {M:001110,F:000,U:0,S:0,C:0}  {M:011010,F:000,U:0,S:0,C:0}  {M:010000,F:000,U:0,S:0,C:0}  {M:000010,F:000,U:0,S:0,C:0}  {M:111001,F:000,U:0,S:0,C:0}  {M:111110,F:000,U:0,S:0,C:0}  
+
+{M:110111,F:000,U:1,S:1,C:0}  {M:000010,F:000,U:1,S:1,C:0}  {M:101010,F:000,U:1,S:1,C:0}  {M:100010,F:000,U:1,S:1,C:0}  {M:101001,F:000,U:1,S:1,C:0}  {M:001011,F:000,U:1,S:1,C:0}  {M:011011,F:000,U:1,S:1,C:0}  {M:010001,F:000,U:1,S:1,C:0}  {M:011111,F:000,U:1,S:1,C:0}  {M:010010,F:000,U:1,S:1,C:0}  {M:011000,F:000,U:1,S:1,C:0}  {M:000110,F:000,U:1,S:1,C:0}  {M:011011,F:000,U:1,S:1,C:0}  {M:111100,F:000,U:1,S:1,C:0}  {M:001000,F:000,U:1,S:1,C:0}  {M:011010,F:000,U:1,S:1,C:0}  {M:011001,F:000,U:1,S:1,C:0}  {M:010000,F:000,U:1,S:1,C:0}  {M:101010,F:000,U:1,S:1,C:0}  {M:110011,F:000,U:1,S:1,C:0}  {M:101101,F:000,U:1,S:1,C:0}  {M:000010,F:000,U:1,S:1,C:0}  {M:110010,F:000,U:1,S:1,C:0}  {M:100110,F:000,U:1,S:1,C:0}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 1
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:000000,F:000,U:0,S:0,C:0}  
+
+{M:001010,F:000,U:0,S:0,C:0}  {M:100100,F:000,U:0,S:0,C:0}  {M:000001,F:000,U:0,S:0,C:0}  
+
+{M:101110,F:000,U:0,S:0,C:0}  {M:010011,F:000,U:0,S:0,C:0}  {M:110100,F:000,U:0,S:0,C:0}  {M:001101,F:000,U:0,S:0,C:0}  {M:010001,F:000,U:0,S:0,C:0}  {M:111011,F:000,U:0,S:0,C:0}  
+
+{M:110101,F:000,U:1,S:1,C:0}  {M:100101,F:000,U:1,S:1,C:0}  {M:001011,F:000,U:1,S:1,C:0}  {M:011111,F:000,U:1,S:1,C:0}  {M:010100,F:000,U:1,S:1,C:0}  {M:101010,F:000,U:1,S:1,C:0}  {M:001110,F:000,U:1,S:1,C:0}  {M:011010,F:000,U:1,S:1,C:0}  {M:010000,F:000,U:1,S:1,C:0}  {M:000010,F:000,U:1,S:1,C:0}  {M:111001,F:000,U:1,S:1,C:0}  {M:111110,F:000,U:1,S:1,C:0}  
+
+{M:110111,F:110,U:1,S:1,C:1}  {M:000010,F:110,U:1,S:0,C:1}  {M:101010,F:110,U:1,S:1,C:1}  {M:100010,F:110,U:1,S:1,C:1}  {M:101001,F:110,U:1,S:1,C:1}  {M:001011,F:110,U:1,S:0,C:1}  {M:011011,F:110,U:1,S:0,C:1}  {M:010001,F:110,U:1,S:0,C:1}  {M:011111,F:110,U:1,S:0,C:1}  {M:010010,F:110,U:1,S:0,C:1}  {M:011000,F:110,U:1,S:0,C:1}  {M:000110,F:110,U:1,S:0,C:1}  {M:011011,F:110,U:1,S:0,C:1}  {M:111100,F:110,U:1,S:1,C:1}  {M:001000,F:110,U:1,S:0,C:1}  {M:011010,F:110,U:1,S:0,C:1}  {M:011001,F:110,U:1,S:0,C:1}  {M:010000,F:110,U:1,S:0,C:1}  {M:101010,F:110,U:1,S:1,C:1}  {M:110011,F:110,U:1,S:1,C:1}  {M:101101,F:110,U:1,S:1,C:1}  {M:000010,F:110,U:1,S:0,C:1}  {M:110010,F:110,U:1,S:1,C:1}  {M:100110,F:110,U:1,S:1,C:1}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 2
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:000000,F:000,U:0,S:0,C:0}  
+
+{M:001010,F:000,U:0,S:0,C:0}  {M:100100,F:000,U:0,S:0,C:0}  {M:000001,F:000,U:0,S:0,C:0}  
+
+{M:101110,F:000,U:1,S:1,C:0}  {M:010011,F:000,U:1,S:1,C:0}  {M:110100,F:000,U:1,S:1,C:0}  {M:001101,F:000,U:1,S:1,C:0}  {M:010001,F:000,U:1,S:1,C:0}  {M:111011,F:000,U:1,S:1,C:0}  
+
+{M:110101,F:010,U:1,S:1,C:1}  {M:100101,F:000,U:1,S:1,C:1}  {M:001011,F:011,U:1,S:1,C:1}  {M:011111,F:000,U:1,S:0,C:1}  {M:010100,F:000,U:1,S:0,C:1}  {M:101010,F:110,U:1,S:1,C:1}  {M:001110,F:101,U:1,S:1,C:1}  {M:011010,F:000,U:1,S:0,C:1}  {M:010000,F:000,U:1,S:0,C:1}  {M:000010,F:001,U:1,S:1,C:1}  {M:111001,F:010,U:1,S:1,C:1}  {M:111110,F:000,U:1,S:1,C:1}  
+
+{M:110111,F:110,U:1,S:1,C:2}  {M:000010,F:110,U:1,S:0,C:2}  {M:101010,F:110,U:1,S:0,C:2}  {M:100010,F:110,U:1,S:0,C:2}  {M:101001,F:110,U:1,S:0,C:2}  {M:001011,F:110,U:1,S:0,C:2}  {M:011011,F:110,U:1,S:1,C:2}  {M:010001,F:110,U:1,S:1,C:2}  {M:011111,F:110,U:1,S:1,C:2}  {M:010010,F:110,U:1,S:1,C:2}  {M:011000,F:110,U:1,S:1,C:2}  {M:000110,F:110,U:1,S:0,C:2}  {M:011011,F:110,U:1,S:1,C:2}  {M:111100,F:110,U:1,S:1,C:2}  {M:001000,F:110,U:1,S:0,C:2}  {M:011010,F:110,U:1,S:1,C:2}  {M:011001,F:110,U:1,S:1,C:2}  {M:010000,F:110,U:1,S:1,C:2}  {M:101010,F:110,U:1,S:0,C:2}  {M:110011,F:110,U:1,S:1,C:2}  {M:101101,F:110,U:1,S:0,C:2}  {M:000010,F:110,U:1,S:0,C:2}  {M:110010,F:110,U:1,S:1,C:2}  {M:100110,F:110,U:1,S:0,C:2}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 3
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:000000,F:000,U:0,S:0,C:0}  
+
+{M:001010,F:000,U:1,S:1,C:0}  {M:100100,F:000,U:1,S:1,C:0}  {M:000001,F:000,U:1,S:1,C:0}  
+
+{M:101110,F:000,U:1,S:1,C:1}  {M:010011,F:011,U:1,S:1,C:1}  {M:110100,F:100,U:1,S:1,C:1}  {M:001101,F:011,U:1,S:1,C:1}  {M:010001,F:101,U:1,S:1,C:1}  {M:111011,F:000,U:1,S:1,C:1}  
+
+{M:110101,F:010,U:1,S:1,C:2}  {M:100101,F:000,U:1,S:0,C:2}  {M:001011,F:011,U:1,S:0,C:2}  {M:011111,F:000,U:1,S:1,C:2}  {M:010100,F:000,U:1,S:1,C:2}  {M:101010,F:110,U:1,S:0,C:2}  {M:001110,F:101,U:1,S:1,C:2}  {M:011010,F:100,U:1,S:1,C:2}  {M:010000,F:000,U:1,S:1,C:2}  {M:000010,F:101,U:1,S:1,C:2}  {M:111001,F:110,U:1,S:1,C:2}  {M:111110,F:010,U:1,S:1,C:2}  
+
+{M:110111,F:110,U:1,S:0,C:3}  {M:000010,F:110,U:1,S:0,C:3}  {M:101010,F:110,U:1,S:1,C:3}  {M:100010,F:110,U:1,S:0,C:3}  {M:101001,F:110,U:1,S:1,C:3}  {M:001011,F:110,U:1,S:1,C:3}  {M:011011,F:110,U:1,S:1,C:3}  {M:010001,F:110,U:1,S:0,C:3}  {M:011111,F:110,U:1,S:1,C:3}  {M:010010,F:110,U:1,S:0,C:3}  {M:011000,F:110,U:1,S:1,C:3}  {M:000110,F:110,U:1,S:0,C:3}  {M:011011,F:110,U:1,S:1,C:3}  {M:111100,F:110,U:1,S:1,C:3}  {M:001000,F:110,U:1,S:1,C:3}  {M:011010,F:110,U:1,S:1,C:3}  {M:011001,F:110,U:1,S:1,C:3}  {M:010000,F:110,U:1,S:0,C:3}  {M:101010,F:110,U:1,S:1,C:3}  {M:110011,F:110,U:1,S:0,C:3}  {M:101101,F:110,U:1,S:1,C:3}  {M:000010,F:110,U:1,S:0,C:3}  {M:110010,F:110,U:1,S:0,C:3}  {M:100110,F:110,U:1,S:0,C:3}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 4
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:000000,F:000,U:1,S:1,C:0}  
+
+{M:001010,F:001,U:1,S:1,C:1}  {M:100100,F:000,U:1,S:1,C:1}  {M:000001,F:001,U:1,S:1,C:1}  
+
+{M:101110,F:011,U:1,S:1,C:2}  {M:010011,F:011,U:1,S:0,C:2}  {M:110100,F:110,U:1,S:1,C:2}  {M:001101,F:011,U:1,S:1,C:2}  {M:010001,F:101,U:1,S:1,C:2}  {M:111011,F:000,U:1,S:1,C:2}  
+
+{M:110101,F:010,U:1,S:0,C:3}  {M:100101,F:011,U:1,S:1,C:3}  {M:001011,F:011,U:1,S:1,C:3}  {M:011111,F:010,U:1,S:1,C:3}  {M:010100,F:011,U:1,S:1,C:3}  {M:101010,F:110,U:1,S:1,C:3}  {M:001110,F:101,U:1,S:1,C:3}  {M:011010,F:100,U:1,S:1,C:3}  {M:010000,F:011,U:1,S:1,C:3}  {M:000010,F:101,U:1,S:0,C:3}  {M:111001,F:110,U:1,S:1,C:3}  {M:111110,F:110,U:1,S:1,C:3}  
+
+{M:110111,F:110,U:1,S:1,C:4}  {M:000010,F:110,U:1,S:0,C:4}  {M:101010,F:110,U:1,S:0,C:4}  {M:100010,F:110,U:1,S:0,C:4}  {M:101001,F:110,U:1,S:0,C:4}  {M:001011,F:110,U:1,S:0,C:4}  {M:011011,F:110,U:1,S:0,C:4}  {M:010001,F:110,U:1,S:0,C:4}  {M:011111,F:110,U:1,S:1,C:4}  {M:010010,F:110,U:1,S:0,C:4}  {M:011000,F:110,U:1,S:0,C:4}  {M:000110,F:110,U:1,S:1,C:4}  {M:011011,F:110,U:1,S:0,C:4}  {M:111100,F:110,U:1,S:1,C:4}  {M:001000,F:110,U:1,S:0,C:4}  {M:011010,F:110,U:1,S:0,C:4}  {M:011001,F:110,U:1,S:0,C:4}  {M:010000,F:110,U:1,S:0,C:4}  {M:101010,F:110,U:1,S:0,C:4}  {M:110011,F:110,U:1,S:0,C:4}  {M:101101,F:110,U:1,S:1,C:4}  {M:000010,F:110,U:1,S:0,C:4}  {M:110010,F:110,U:1,S:0,C:4}  {M:100110,F:110,U:1,S:1,C:4}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 5
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:100000,F:000,U:1,S:1,C:1}  
+
+{M:001010,F:011,U:1,S:1,C:2}  {M:100100,F:001,U:1,S:1,C:2}  {M:000001,F:001,U:1,S:1,C:2}  
+
+{M:101110,F:011,U:1,S:0,C:3}  {M:010011,F:011,U:1,S:1,C:3}  {M:110100,F:110,U:1,S:0,C:3}  {M:001101,F:011,U:1,S:1,C:3}  {M:010001,F:101,U:1,S:0,C:3}  {M:111011,F:000,U:1,S:1,C:3}  
+
+{M:110101,F:010,U:1,S:1,C:4}  {M:100101,F:011,U:1,S:0,C:4}  {M:001011,F:011,U:1,S:0,C:4}  {M:011111,F:110,U:1,S:1,C:4}  {M:010100,F:011,U:1,S:1,C:4}  {M:101010,F:110,U:1,S:0,C:4}  {M:001110,F:101,U:1,S:1,C:4}  {M:011010,F:100,U:1,S:0,C:4}  {M:010000,F:011,U:1,S:0,C:4}  {M:000010,F:101,U:1,S:0,C:4}  {M:111001,F:110,U:1,S:0,C:4}  {M:111110,F:110,U:1,S:1,C:4}  
+
+{M:110111,F:110,U:1,S:1,C:5}  {M:000010,F:110,U:1,S:1,C:5}  {M:101010,F:110,U:1,S:1,C:5}  {M:100010,F:110,U:1,S:1,C:5}  {M:101001,F:110,U:1,S:0,C:5}  {M:001011,F:110,U:1,S:1,C:5}  {M:011011,F:110,U:1,S:1,C:5}  {M:010001,F:110,U:1,S:0,C:5}  {M:011111,F:110,U:1,S:1,C:5}  {M:010010,F:110,U:1,S:1,C:5}  {M:011000,F:110,U:1,S:0,C:5}  {M:000110,F:110,U:1,S:1,C:5}  {M:011011,F:110,U:1,S:1,C:5}  {M:111100,F:110,U:1,S:0,C:5}  {M:001000,F:110,U:1,S:0,C:5}  {M:011010,F:110,U:1,S:1,C:5}  {M:011001,F:110,U:1,S:0,C:5}  {M:010000,F:110,U:1,S:0,C:5}  {M:101010,F:110,U:1,S:1,C:5}  {M:110011,F:110,U:1,S:1,C:5}  {M:101101,F:110,U:1,S:0,C:5}  {M:000010,F:110,U:1,S:1,C:5}  {M:110010,F:110,U:1,S:1,C:5}  {M:100110,F:110,U:1,S:1,C:5}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 6
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:110000,F:000,U:1,S:1,C:2}  
+
+{M:001010,F:011,U:1,S:0,C:3}  {M:100100,F:101,U:1,S:1,C:3}  {M:000001,F:101,U:1,S:1,C:3}  
+
+{M:101110,F:011,U:1,S:1,C:4}  {M:010011,F:011,U:1,S:0,C:4}  {M:110100,F:110,U:1,S:1,C:4}  {M:001101,F:011,U:1,S:1,C:4}  {M:010001,F:101,U:1,S:0,C:4}  {M:111011,F:101,U:1,S:1,C:4}  
+
+{M:110101,F:011,U:1,S:1,C:5}  {M:100101,F:011,U:1,S:1,C:5}  {M:001011,F:011,U:1,S:0,C:5}  {M:011111,F:110,U:1,S:1,C:5}  {M:010100,F:011,U:1,S:1,C:5}  {M:101010,F:110,U:1,S:1,C:5}  {M:001110,F:101,U:1,S:0,C:5}  {M:011010,F:100,U:1,S:1,C:5}  {M:010000,F:011,U:1,S:0,C:5}  {M:000010,F:101,U:1,S:1,C:5}  {M:111001,F:110,U:1,S:0,C:5}  {M:111110,F:110,U:1,S:1,C:5}  
+
+{M:110111,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:100010,F:110,U:1,S:0,C:6}  {M:101001,F:110,U:1,S:1,C:6}  {M:001011,F:110,U:1,S:1,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:010001,F:110,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010010,F:110,U:1,S:0,C:6}  {M:011000,F:110,U:1,S:0,C:6}  {M:000110,F:110,U:1,S:0,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:111100,F:110,U:1,S:0,C:6}  {M:001000,F:110,U:1,S:0,C:6}  {M:011010,F:110,U:1,S:0,C:6}  {M:011001,F:110,U:1,S:1,C:6}  {M:010000,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:110011,F:110,U:1,S:1,C:6}  {M:101101,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:110010,F:110,U:1,S:0,C:6}  {M:100110,F:110,U:1,S:0,C:6}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 7
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:111000,F:100,U:1,S:1,C:3}  
+
+{M:001010,F:011,U:1,S:1,C:4}  {M:100100,F:101,U:1,S:1,C:4}  {M:000001,F:101,U:1,S:1,C:4}  
+
+{M:101110,F:011,U:1,S:1,C:5}  {M:010011,F:011,U:1,S:0,C:5}  {M:110100,F:110,U:1,S:0,C:5}  {M:001101,F:011,U:1,S:0,C:5}  {M:010001,F:101,U:1,S:1,C:5}  {M:111011,F:101,U:1,S:1,C:5}  
+
+{M:110101,F:011,U:1,S:1,C:6}  {M:100101,F:011,U:1,S:0,C:6}  {M:001011,F:011,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010100,F:011,U:1,S:1,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:001110,F:101,U:1,S:0,C:6}  {M:011010,F:100,U:1,S:0,C:6}  {M:010000,F:011,U:1,S:1,C:6}  {M:000010,F:101,U:1,S:1,C:6}  {M:111001,F:110,U:1,S:1,C:6}  {M:111110,F:110,U:1,S:0,C:6}  
+
+{M:110111,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:100010,F:110,U:1,S:0,C:6}  {M:101001,F:110,U:1,S:1,C:6}  {M:001011,F:110,U:1,S:1,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:010001,F:110,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010010,F:110,U:1,S:0,C:6}  {M:011000,F:110,U:1,S:0,C:6}  {M:000110,F:110,U:1,S:0,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:111100,F:110,U:1,S:0,C:6}  {M:001000,F:110,U:1,S:0,C:6}  {M:011010,F:110,U:1,S:0,C:6}  {M:011001,F:110,U:1,S:1,C:6}  {M:010000,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:110011,F:110,U:1,S:1,C:6}  {M:101101,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:110010,F:110,U:1,S:0,C:6}  {M:100110,F:110,U:1,S:0,C:6}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 8
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:111100,F:100,U:1,S:1,C:4}  
+
+{M:001010,F:011,U:1,S:1,C:5}  {M:100100,F:101,U:1,S:0,C:5}  {M:000001,F:101,U:1,S:1,C:5}  
+
+{M:101110,F:011,U:1,S:1,C:6}  {M:010011,F:011,U:1,S:1,C:6}  {M:110100,F:110,U:1,S:0,C:6}  {M:001101,F:011,U:1,S:0,C:6}  {M:010001,F:101,U:1,S:1,C:6}  {M:111011,F:101,U:1,S:0,C:6}  
+
+{M:110101,F:011,U:1,S:1,C:6}  {M:100101,F:011,U:1,S:0,C:6}  {M:001011,F:011,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010100,F:011,U:1,S:1,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:001110,F:101,U:1,S:0,C:6}  {M:011010,F:100,U:1,S:0,C:6}  {M:010000,F:011,U:1,S:1,C:6}  {M:000010,F:101,U:1,S:1,C:6}  {M:111001,F:110,U:1,S:1,C:6}  {M:111110,F:110,U:1,S:0,C:6}  
+
+{M:110111,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:100010,F:110,U:1,S:0,C:6}  {M:101001,F:110,U:1,S:1,C:6}  {M:001011,F:110,U:1,S:1,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:010001,F:110,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010010,F:110,U:1,S:0,C:6}  {M:011000,F:110,U:1,S:0,C:6}  {M:000110,F:110,U:1,S:0,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:111100,F:110,U:1,S:0,C:6}  {M:001000,F:110,U:1,S:0,C:6}  {M:011010,F:110,U:1,S:0,C:6}  {M:011001,F:110,U:1,S:1,C:6}  {M:010000,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:110011,F:110,U:1,S:1,C:6}  {M:101101,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:110010,F:110,U:1,S:0,C:6}  {M:100110,F:110,U:1,S:0,C:6}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 9
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:111110,F:110,U:1,S:1,C:5}  
+
+{M:001010,F:011,U:1,S:1,C:6}  {M:100100,F:101,U:1,S:0,C:6}  {M:000001,F:101,U:1,S:0,C:6}  
+
+{M:101110,F:011,U:1,S:1,C:6}  {M:010011,F:011,U:1,S:1,C:6}  {M:110100,F:110,U:1,S:0,C:6}  {M:001101,F:011,U:1,S:0,C:6}  {M:010001,F:101,U:1,S:1,C:6}  {M:111011,F:101,U:1,S:0,C:6}  
+
+{M:110101,F:011,U:1,S:1,C:6}  {M:100101,F:011,U:1,S:0,C:6}  {M:001011,F:011,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010100,F:011,U:1,S:1,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:001110,F:101,U:1,S:0,C:6}  {M:011010,F:100,U:1,S:0,C:6}  {M:010000,F:011,U:1,S:1,C:6}  {M:000010,F:101,U:1,S:1,C:6}  {M:111001,F:110,U:1,S:1,C:6}  {M:111110,F:110,U:1,S:0,C:6}  
+
+{M:110111,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:100010,F:110,U:1,S:0,C:6}  {M:101001,F:110,U:1,S:1,C:6}  {M:001011,F:110,U:1,S:1,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:010001,F:110,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010010,F:110,U:1,S:0,C:6}  {M:011000,F:110,U:1,S:0,C:6}  {M:000110,F:110,U:1,S:0,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:111100,F:110,U:1,S:0,C:6}  {M:001000,F:110,U:1,S:0,C:6}  {M:011010,F:110,U:1,S:0,C:6}  {M:011001,F:110,U:1,S:1,C:6}  {M:010000,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:110011,F:110,U:1,S:1,C:6}  {M:101101,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:110010,F:110,U:1,S:0,C:6}  {M:100110,F:110,U:1,S:0,C:6}  
+
+-------------------------------------------------------------
+Iteration(clock pulse) : 10
+root node is exucuted
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+intermediate node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+leaf node is executed
+
+{M:111110,F:110,U:1,S:0,C:6}  
+
+{M:001010,F:011,U:1,S:1,C:6}  {M:100100,F:101,U:1,S:0,C:6}  {M:000001,F:101,U:1,S:0,C:6}  
+
+{M:101110,F:011,U:1,S:1,C:6}  {M:010011,F:011,U:1,S:1,C:6}  {M:110100,F:110,U:1,S:0,C:6}  {M:001101,F:011,U:1,S:0,C:6}  {M:010001,F:101,U:1,S:1,C:6}  {M:111011,F:101,U:1,S:0,C:6}  
+
+{M:110101,F:011,U:1,S:1,C:6}  {M:100101,F:011,U:1,S:0,C:6}  {M:001011,F:011,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010100,F:011,U:1,S:1,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:001110,F:101,U:1,S:0,C:6}  {M:011010,F:100,U:1,S:0,C:6}  {M:010000,F:011,U:1,S:1,C:6}  {M:000010,F:101,U:1,S:1,C:6}  {M:111001,F:110,U:1,S:1,C:6}  {M:111110,F:110,U:1,S:0,C:6}  
+
+{M:110111,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:100010,F:110,U:1,S:0,C:6}  {M:101001,F:110,U:1,S:1,C:6}  {M:001011,F:110,U:1,S:1,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:010001,F:110,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010010,F:110,U:1,S:0,C:6}  {M:011000,F:110,U:1,S:0,C:6}  {M:000110,F:110,U:1,S:0,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:111100,F:110,U:1,S:0,C:6}  {M:001000,F:110,U:1,S:0,C:6}  {M:011010,F:110,U:1,S:0,C:6}  {M:011001,F:110,U:1,S:1,C:6}  {M:010000,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:110011,F:110,U:1,S:1,C:6}  {M:101101,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:110010,F:110,U:1,S:0,C:6}  {M:100110,F:110,U:1,S:0,C:6}  
+
+-------------------------------------------------------------
+Searching Executed Successfully...
+
+Final State: 
+{M:111110,F:110,U:1,S:0,C:6}  
+
+{M:001010,F:011,U:1,S:1,C:6}  {M:100100,F:101,U:1,S:0,C:6}  {M:000001,F:101,U:1,S:0,C:6}  
+
+{M:101110,F:011,U:1,S:1,C:6}  {M:010011,F:011,U:1,S:1,C:6}  {M:110100,F:110,U:1,S:0,C:6}  {M:001101,F:011,U:1,S:0,C:6}  {M:010001,F:101,U:1,S:1,C:6}  {M:111011,F:101,U:1,S:0,C:6}  
+
+{M:110101,F:011,U:1,S:1,C:6}  {M:100101,F:011,U:1,S:0,C:6}  {M:001011,F:011,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010100,F:011,U:1,S:1,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:001110,F:101,U:1,S:0,C:6}  {M:011010,F:100,U:1,S:0,C:6}  {M:010000,F:011,U:1,S:1,C:6}  {M:000010,F:101,U:1,S:1,C:6}  {M:111001,F:110,U:1,S:1,C:6}  {M:111110,F:110,U:1,S:0,C:6}  
+
+{M:110111,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:100010,F:110,U:1,S:0,C:6}  {M:101001,F:110,U:1,S:1,C:6}  {M:001011,F:110,U:1,S:1,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:010001,F:110,U:1,S:1,C:6}  {M:011111,F:110,U:1,S:1,C:6}  {M:010010,F:110,U:1,S:0,C:6}  {M:011000,F:110,U:1,S:0,C:6}  {M:000110,F:110,U:1,S:0,C:6}  {M:011011,F:110,U:1,S:1,C:6}  {M:111100,F:110,U:1,S:0,C:6}  {M:001000,F:110,U:1,S:0,C:6}  {M:011010,F:110,U:1,S:0,C:6}  {M:011001,F:110,U:1,S:1,C:6}  {M:010000,F:110,U:1,S:0,C:6}  {M:101010,F:110,U:1,S:0,C:6}  {M:110011,F:110,U:1,S:1,C:6}  {M:101101,F:110,U:1,S:1,C:6}  {M:000010,F:110,U:1,S:0,C:6}  {M:110010,F:110,U:1,S:0,C:6}  {M:100110,F:110,U:1,S:0,C:6}  
+
+
+
+
+
+
+=======================================================================================================================================================================================
+
+Example 3: 
+
+sequence value : 340 900 729 853 841 774 306 526 333 344 540 386 376 222 940 642 845 390 405 324 599 769 604 393 821 658 804 473 624 874 806 582 638 618 382 402 938 803 763 465 285 343 219 929 521 599 388 553 454 838 662 767 490 494 788 819 570 560 816 832 836 456 659 686 569 214 491 746 890 697 319 904 261 343 547 429 851 770 625 743 228 302 898 927 642 826 386 704 212 372 859 459 646 666 499 890 579 474 805 376 563 440 249 495 365 272 303 629 622 657 939 960 382 480 486 301 321 912 439 681 284 669 915 759 426 355 958 449 617 667 202 257 646 236 218 921 814 785 498 213 504 461 329 297 722 621 218 311 894 984 755 856 281 744 544 536 290 390 704 697 327 754 468 317 260 469 883 658 799 325 318 324 336 457 940 814 325 490 609 488 900 828 934 460 224 427 387 657 928 313 643 941 588 579 608 319 459 349 526 631 579 441 749 629 681 843 957 849 989 276 497 749 290 727 756 495 596 350 793 315 211 746 912 932 251 465 409 299 593 436 447 977 743 379 916 359 205 413 326 754 330 701 911 219 752 493 870 337 605 820 271 558 290 757 393 299 434 724 228 513 368 565 434 899 786 626 939 795 368 407 698 499 690 705 644 386 210 984 684 573 321 222 712 882 405 386 610 508 553 269 905 931 822 548 435 770 451 343 363 905 205 968 751 256 621 227 500 739 824 734 767 650 426 629 316 233 622 637 990 321 426 265 815 435 258 612 327 821 228 523 291 367 305 536 411 692 904 811 880 692 821 955 419 555 542 332 477 584 913 848 570 811 525 972 223 228 300 434 768 677 806 555 229 575 736 510 205 426 796 956 484 593 977 775 460 796 764 291 950 244 548 506 204 230 372 614 714 650 450 784 630 291 395 861 363 203 379 550 460 342 222 862 851 329 343 325 868 434 920 373 962 618 720 847 682 558 881 903 380 989 230 273 683 370 393 284 951 907 713 527 340 796 887 955 383 572 671 396 346 691 247 724 457 278 943 718 918 376 783 858 989 214 777 507 942 994 569 292 676 473 404 526 852 561 217 484 576 855 888 668 474 508 281 515 818 779 724 995 240 977 240 380 486 745 853 499 710 646 775 909 568 773 554 703 335 858 629 981 562 250 492 796 699 769 717 550 281 794 218 740 529 937 444 546 942 970 763 371 410 928 304 282 781 790 883 662 697 384 400 936 588 637 452 212 742 990 529 885 611 964 660 373 248 925 859 981 207 960 923 704 817 556 686 700 255 574 373 305 739 332 667 390 675 278 833 475 817 644 641 357 583 590 860 489 596 789 479 662 396 393 388 726 242 371 418 672 528 995 935 885 827 291 886 243 978 885 353 425 492 324 294 802 971 967 936 561 990 870 703 938 967 563 516 770 579 978 621 673 439 738 470 700 708 833 888 229 439 625 828 391 321 256 874 994 271 811 929 849 213 431 517 517 330 935 587 372 204 787 998 928 956 730 401 955 768 928 881 282 668 302 292 217 422 862 546 870 340 552 917 367 578 418 905 432 332 364 664 233 767 567 627 733 236 687 529 636 298 428 488 637 766 994 363 796 214 482 769 568 812 858 797 536 289 314 950 339 249 481 511 231 401 259 619 493 536 764 396 517 520 806 954 333 367 602 909 397 631 406 692 437 535 930 532 608 557 484 845 489 642 899 236 372 924 943 673 637 402 321 763 337 867 915 338 326 359 348 751 413 655 407 539 579 745 631 793 
+
+Max Value: 998
+
+Total Nodes: 766
+
+Initial State: 
+{M:0000000000,F:000,U:0,S:0,C:0}  
+
+{M:0100111111,F:000,U:0,S:0,C:0}  {M:1100110010,F:000,U:0,S:0,C:0}  {M:1010000010,F:000,U:0,S:0,C:0}  
+
+{M:1001111100,F:000,U:0,S:0,C:0}  {M:1110100000,F:000,U:0,S:0,C:0}  {M:0111111000,F:000,U:0,S:0,C:0}  {M:0100101011,F:000,U:0,S:0,C:0}  {M:0011110010,F:000,U:0,S:0,C:0}  {M:0110100010,F:000,U:0,S:0,C:0}  
+
+{M:0100101011,F:000,U:0,S:0,C:0}  {M:1110001000,F:000,U:0,S:0,C:0}  {M:1110111101,F:000,U:0,S:0,C:0}  {M:0100000100,F:000,U:0,S:0,C:0}  {M:1010011010,F:000,U:0,S:0,C:0}  {M:0100110001,F:000,U:0,S:0,C:0}  {M:1101010101,F:000,U:0,S:0,C:0}  {M:0101111000,F:000,U:0,S:0,C:0}  {M:0101000101,F:000,U:0,S:0,C:0}  {M:1101010111,F:000,U:0,S:0,C:0}  {M:1000000011,F:000,U:0,S:0,C:0}  {M:0011001011,F:000,U:0,S:0,C:0}  
+
+{M:1100110011,F:000,U:0,S:0,C:0}  {M:1011100011,F:000,U:0,S:0,C:0}  {M:0111101001,F:000,U:0,S:0,C:0}  {M:1100101011,F:000,U:0,S:0,C:0}  {M:0011011110,F:000,U:0,S:0,C:0}  {M:1100000110,F:000,U:0,S:0,C:0}  {M:0111000110,F:000,U:0,S:0,C:0}  {M:0110001001,F:000,U:0,S:0,C:0}  {M:0100110111,F:000,U:0,S:0,C:0}  {M:1010101110,F:000,U:0,S:0,C:0}  {M:1000000101,F:000,U:0,S:0,C:0}  {M:1010111011,F:000,U:0,S:0,C:0}  {M:0011101100,F:000,U:0,S:0,C:0}  {M:1111011110,F:000,U:0,S:0,C:0}  {M:1100011101,F:000,U:0,S:0,C:0}  {M:1111100011,F:000,U:0,S:0,C:0}  {M:1000100010,F:000,U:0,S:0,C:0}  {M:0011111111,F:000,U:0,S:0,C:0}  {M:1100010110,F:000,U:0,S:0,C:0}  {M:0100100100,F:000,U:0,S:0,C:0}  {M:0110110100,F:000,U:0,S:0,C:0}  {M:1110101100,F:000,U:0,S:0,C:0}  {M:1101101010,F:000,U:0,S:0,C:0}  {M:1110100001,F:000,U:0,S:0,C:0}  
+
+{M:0101000101,F:000,U:0,S:0,C:0}  {M:0111101111,F:000,U:0,S:0,C:0}  {M:1110010011,F:000,U:0,S:0,C:0}  {M:0111010001,F:000,U:0,S:0,C:0}  {M:0111011111,F:000,U:0,S:0,C:0}  {M:1110100011,F:000,U:0,S:0,C:0}  {M:1010100001,F:000,U:0,S:0,C:0}  {M:1010100001,F:000,U:0,S:0,C:0}  {M:1100011100,F:000,U:0,S:0,C:0}  {M:1000110011,F:000,U:0,S:0,C:0}  {M:1010110010,F:000,U:0,S:0,C:0}  {M:0011010011,F:000,U:0,S:0,C:0}  {M:1010000010,F:000,U:0,S:0,C:0}  {M:1011110111,F:000,U:0,S:0,C:0}  {M:1101100110,F:000,U:0,S:0,C:0}  {M:1111100010,F:000,U:0,S:0,C:0}  {M:0110000110,F:000,U:0,S:0,C:0}  {M:0011101001,F:000,U:0,S:0,C:0}  {M:0011010100,F:000,U:0,S:0,C:0}  {M:0011100101,F:000,U:0,S:0,C:0}  {M:0110010100,F:000,U:0,S:0,C:0}  {M:1110001001,F:000,U:0,S:0,C:0}  {M:1100100110,F:000,U:0,S:0,C:0}  {M:1101010011,F:000,U:0,S:0,C:0}  {M:1110110111,F:000,U:0,S:0,C:0}  {M:1010111101,F:000,U:0,S:0,C:0}  {M:1001110000,F:000,U:0,S:0,C:0}  {M:1001111101,F:000,U:0,S:0,C:0}  {M:1100010101,F:000,U:0,S:0,C:0}  {M:0110011101,F:000,U:0,S:0,C:0}  {M:1001110101,F:000,U:0,S:0,C:0}  {M:1001100001,F:000,U:0,S:0,C:0}  {M:1001100000,F:000,U:0,S:0,C:0}  {M:1010100000,F:000,U:0,S:0,C:0}  {M:1011111011,F:000,U:0,S:0,C:0}  {M:0101010001,F:000,U:0,S:0,C:0}  {M:1111100011,F:000,U:0,S:0,C:0}  {M:1111011101,F:000,U:0,S:0,C:0}  {M:1010000110,F:000,U:0,S:0,C:0}  {M:1010001010,F:000,U:0,S:0,C:0}  {M:1100110101,F:000,U:0,S:0,C:0}  {M:1010100101,F:000,U:0,S:0,C:0}  {M:0110111001,F:000,U:0,S:0,C:0}  {M:1111011101,F:000,U:0,S:0,C:0}  {M:1111001011,F:000,U:0,S:0,C:0}  {M:0110010001,F:000,U:0,S:0,C:0}  {M:1110111010,F:000,U:0,S:0,C:0}  {M:0101110101,F:000,U:0,S:0,C:0}  
+
+{M:1101111110,F:000,U:0,S:0,C:0}  {M:1111011110,F:000,U:0,S:0,C:0}  {M:1001101010,F:000,U:0,S:0,C:0}  {M:0110001100,F:000,U:0,S:0,C:0}  {M:0111010101,F:000,U:0,S:0,C:0}  {M:0110101010,F:000,U:0,S:0,C:0}  {M:1100000010,F:000,U:0,S:0,C:0}  {M:1000011110,F:000,U:0,S:0,C:0}  {M:1000010000,F:000,U:0,S:0,C:0}  {M:1001110101,F:000,U:0,S:0,C:0}  {M:1100000111,F:000,U:0,S:0,C:0}  {M:1001010100,F:000,U:0,S:0,C:0}  {M:1001111101,F:000,U:0,S:0,C:0}  {M:1001001100,F:000,U:0,S:0,C:0}  {M:0100001111,F:000,U:0,S:0,C:0}  {M:0111001011,F:000,U:0,S:0,C:0}  {M:1001011010,F:000,U:0,S:0,C:0}  {M:1010101100,F:000,U:0,S:0,C:0}  {M:1001000110,F:000,U:0,S:0,C:0}  {M:0011101100,F:000,U:0,S:0,C:0}  {M:1100100010,F:000,U:0,S:0,C:0}  {M:1101001101,F:000,U:0,S:0,C:0}  {M:1000101001,F:000,U:0,S:0,C:0}  {M:1001101011,F:000,U:0,S:0,C:0}  {M:0111100001,F:000,U:0,S:0,C:0}  {M:1000111000,F:000,U:0,S:0,C:0}  {M:1001110101,F:000,U:0,S:0,C:0}  {M:0110000110,F:000,U:0,S:0,C:0}  {M:0110100011,F:000,U:0,S:0,C:0}  {M:0011100110,F:000,U:0,S:0,C:0}  {M:1101001011,F:000,U:0,S:0,C:0}  {M:1101110011,F:000,U:0,S:0,C:0}  {M:0011101100,F:000,U:0,S:0,C:0}  {M:1001101110,F:000,U:0,S:0,C:0}  {M:0100000010,F:000,U:0,S:0,C:0}  {M:0110000110,F:000,U:0,S:0,C:0}  {M:1000111001,F:000,U:0,S:0,C:0}  {M:1010110100,F:000,U:0,S:0,C:0}  {M:1011111011,F:000,U:0,S:0,C:0}  {M:0101001010,F:000,U:0,S:0,C:0}  {M:0111100110,F:000,U:0,S:0,C:0}  {M:0101001101,F:000,U:0,S:0,C:0}  {M:0111000010,F:000,U:0,S:0,C:0}  {M:1111000111,F:000,U:0,S:0,C:0}  {M:1100101110,F:000,U:0,S:0,C:0}  {M:0100011100,F:000,U:0,S:0,C:0}  {M:0011111001,F:000,U:0,S:0,C:0}  {M:0110010000,F:000,U:0,S:0,C:0}  {M:0011100000,F:000,U:0,S:0,C:0}  {M:1001100010,F:000,U:0,S:0,C:0}  {M:0111011101,F:000,U:0,S:0,C:0}  {M:1110001101,F:000,U:0,S:0,C:0}  {M:1100111000,F:000,U:0,S:0,C:0}  {M:0100011001,F:000,U:0,S:0,C:0}  {M:0100000001,F:000,U:0,S:0,C:0}  {M:1100010010,F:000,U:0,S:0,C:0}  {M:0100000011,F:000,U:0,S:0,C:0}  {M:0101100111,F:000,U:0,S:0,C:0}  {M:1011110010,F:000,U:0,S:0,C:0}  {M:0111110001,F:000,U:0,S:0,C:0}  {M:1000101000,F:000,U:0,S:0,C:0}  {M:1001010111,F:000,U:0,S:0,C:0}  {M:1111010101,F:000,U:0,S:0,C:0}  {M:0100001111,F:000,U:0,S:0,C:0}  {M:1011101111,F:000,U:0,S:0,C:0}  {M:1011100111,F:000,U:0,S:0,C:0}  {M:1110101100,F:000,U:0,S:0,C:0}  {M:0101110100,F:000,U:0,S:0,C:0}  {M:0111101100,F:000,U:0,S:0,C:0}  {M:1100000001,F:000,U:0,S:0,C:0}  {M:1000101100,F:000,U:0,S:0,C:0}  {M:1010010110,F:000,U:0,S:0,C:0}  {M:1001011100,F:000,U:0,S:0,C:0}  {M:1011110010,F:000,U:0,S:0,C:0}  {M:1101110000,F:000,U:0,S:0,C:0}  {M:1011001000,F:000,U:0,S:0,C:0}  {M:0101111100,F:000,U:0,S:0,C:0}  {M:1110010110,F:000,U:0,S:0,C:0}  {M:1100011100,F:000,U:0,S:0,C:0}  {M:0110010101,F:000,U:0,S:0,C:0}  {M:0100100011,F:000,U:0,S:0,C:0}  {M:1110101010,F:000,U:0,S:0,C:0}  {M:1011111111,F:000,U:0,S:0,C:0}  {M:1110101011,F:000,U:0,S:0,C:0}  {M:0100111100,F:000,U:0,S:0,C:0}  {M:0100011010,F:000,U:0,S:0,C:0}  {M:1010101001,F:000,U:0,S:0,C:0}  {M:1010011101,F:000,U:0,S:0,C:0}  {M:0110001100,F:000,U:0,S:0,C:0}  {M:1001001100,F:000,U:0,S:0,C:0}  {M:0101001100,F:000,U:0,S:0,C:0}  {M:1100111100,F:000,U:0,S:0,C:0}  {M:1100110110,F:000,U:0,S:0,C:0}  {M:1101001101,F:000,U:0,S:0,C:0}  {M:0110101101,F:000,U:0,S:0,C:0}  {M:0100111001,F:000,U:0,S:0,C:0}  
+
+{M:0100010110,F:000,U:0,S:0,C:0}  {M:1110000111,F:000,U:0,S:0,C:0}  {M:0111101100,F:000,U:0,S:0,C:0}  {M:1010010001,F:000,U:0,S:0,C:0}  {M:1110101000,F:000,U:0,S:0,C:0}  {M:0011111010,F:000,U:0,S:0,C:0}  {M:1101101010,F:000,U:0,S:0,C:0}  {M:1110011000,F:000,U:0,S:0,C:0}  {M:0011001010,F:000,U:0,S:0,C:0}  {M:0101000001,F:000,U:0,S:0,C:0}  {M:1011101101,F:000,U:0,S:0,C:0}  {M:0111110100,F:000,U:0,S:0,C:0}  {M:0111101101,F:000,U:0,S:0,C:0}  {M:1010000010,F:000,U:0,S:0,C:0}  {M:1011100011,F:000,U:0,S:0,C:0}  {M:0011001101,F:000,U:0,S:0,C:0}  {M:1011011001,F:000,U:0,S:0,C:0}  {M:1001110011,F:000,U:0,S:0,C:0}  {M:0011010010,F:000,U:0,S:0,C:0}  {M:1010011011,F:000,U:0,S:0,C:0}  {M:1001010100,F:000,U:0,S:0,C:0}  {M:0101111000,F:000,U:0,S:0,C:0}  {M:1001000011,F:000,U:0,S:0,C:0}  {M:0111101000,F:000,U:0,S:0,C:0}  {M:1101110010,F:000,U:0,S:0,C:0}  {M:1010100011,F:000,U:0,S:0,C:0}  {M:1110001111,F:000,U:0,S:0,C:0}  {M:1101011110,F:000,U:0,S:0,C:0}  {M:0101010111,F:000,U:0,S:0,C:0}  {M:1010011011,F:000,U:0,S:0,C:0}  {M:1010101111,F:000,U:0,S:0,C:0}  {M:1001101010,F:000,U:0,S:0,C:0}  {M:1110011001,F:000,U:0,S:0,C:0}  {M:0110011011,F:000,U:0,S:0,C:0}  {M:1111010010,F:000,U:0,S:0,C:0}  {M:1010000011,F:000,U:0,S:0,C:0}  {M:1100110000,F:000,U:0,S:0,C:0}  {M:0101001010,F:000,U:0,S:0,C:0}  {M:1110101111,F:000,U:0,S:0,C:0}  {M:0011010101,F:000,U:0,S:0,C:0}  {M:1000100100,F:000,U:0,S:0,C:0}  {M:0110110011,F:000,U:0,S:0,C:0}  {M:0111001001,F:000,U:0,S:0,C:0}  {M:0100111101,F:000,U:0,S:0,C:0}  {M:0101011100,F:000,U:0,S:0,C:0}  {M:0101000101,F:000,U:0,S:0,C:0}  {M:0110010101,F:000,U:0,S:0,C:0}  {M:1100000000,F:000,U:0,S:0,C:0}  {M:0100101101,F:000,U:0,S:0,C:0}  {M:0011100100,F:000,U:0,S:0,C:0}  {M:1101010001,F:000,U:0,S:0,C:0}  {M:1100100110,F:000,U:0,S:0,C:0}  {M:1101110101,F:000,U:0,S:0,C:0}  {M:1000111110,F:000,U:0,S:0,C:0}  {M:0110110010,F:000,U:0,S:0,C:0}  {M:0101110100,F:000,U:0,S:0,C:0}  {M:1100110101,F:000,U:0,S:0,C:0}  {M:0110100010,F:000,U:0,S:0,C:0}  {M:1111001010,F:000,U:0,S:0,C:0}  {M:1101011101,F:000,U:0,S:0,C:0}  {M:0110101011,F:000,U:0,S:0,C:0}  {M:0101101011,F:000,U:0,S:0,C:0}  {M:0100100010,F:000,U:0,S:0,C:0}  {M:1111011000,F:000,U:0,S:0,C:0}  {M:1000100000,F:000,U:0,S:0,C:0}  {M:0011110100,F:000,U:0,S:0,C:0}  {M:1001010111,F:000,U:0,S:0,C:0}  {M:1010010010,F:000,U:0,S:0,C:0}  {M:1010111001,F:000,U:0,S:0,C:0}  {M:0011111000,F:000,U:0,S:0,C:0}  {M:0110110000,F:000,U:0,S:0,C:0}  {M:1011111110,F:000,U:0,S:0,C:0}  {M:1000000100,F:000,U:0,S:0,C:0}  {M:0011010110,F:000,U:0,S:0,C:0}  {M:0101100111,F:000,U:0,S:0,C:0}  {M:1110000011,F:000,U:0,S:0,C:0}  {M:0011011111,F:000,U:0,S:0,C:0}  {M:1101011110,F:000,U:0,S:0,C:0}  {M:0110101010,F:000,U:0,S:0,C:0}  {M:1101000001,F:000,U:0,S:0,C:0}  {M:0110000010,F:000,U:0,S:0,C:0}  {M:1000010001,F:000,U:0,S:0,C:0}  {M:1000001001,F:000,U:0,S:0,C:0}  {M:1011010100,F:000,U:0,S:0,C:0}  {M:1011010111,F:000,U:0,S:0,C:0}  {M:0101010100,F:000,U:0,S:0,C:0}  {M:1001100000,F:000,U:0,S:0,C:0}  {M:0111111100,F:000,U:0,S:0,C:0}  {M:1111010010,F:000,U:0,S:0,C:0}  {M:1000111111,F:000,U:0,S:0,C:0}  {M:0111011011,F:000,U:0,S:0,C:0}  {M:1010001010,F:000,U:0,S:0,C:0}  {M:1111000100,F:000,U:0,S:0,C:0}  {M:1110000011,F:000,U:0,S:0,C:0}  {M:1001000010,F:000,U:0,S:0,C:0}  {M:1100001011,F:000,U:0,S:0,C:0}  {M:0100110010,F:000,U:0,S:0,C:0}  {M:0101000111,F:000,U:0,S:0,C:0}  {M:1000101101,F:000,U:0,S:0,C:0}  {M:0111000100,F:000,U:0,S:0,C:0}  {M:1101011010,F:000,U:0,S:0,C:0}  {M:0011100100,F:000,U:0,S:0,C:0}  {M:0101111110,F:000,U:0,S:0,C:0}  {M:1100101011,F:000,U:0,S:0,C:0}  {M:0100011100,F:000,U:0,S:0,C:0}  {M:0110000010,F:000,U:0,S:0,C:0}  {M:0110100110,F:000,U:0,S:0,C:0}  {M:1110000100,F:000,U:0,S:0,C:0}  {M:0011011010,F:000,U:0,S:0,C:0}  {M:1000100011,F:000,U:0,S:0,C:0}  {M:1001000011,F:000,U:0,S:0,C:0}  {M:1110101000,F:000,U:0,S:0,C:0}  {M:1010000110,F:000,U:0,S:0,C:0}  {M:0101110011,F:000,U:0,S:0,C:0}  {M:1100111010,F:000,U:0,S:0,C:0}  {M:1111001100,F:000,U:0,S:0,C:0}  {M:1011000000,F:000,U:0,S:0,C:0}  {M:0100010110,F:000,U:0,S:0,C:0}  {M:0100011001,F:000,U:0,S:0,C:0}  {M:0101000001,F:000,U:0,S:0,C:0}  {M:1011101101,F:000,U:0,S:0,C:0}  {M:1011000110,F:000,U:0,S:0,C:0}  {M:0011011010,F:000,U:0,S:0,C:0}  {M:0100001101,F:000,U:0,S:0,C:0}  {M:1000101110,F:000,U:0,S:0,C:0}  {M:1010111111,F:000,U:0,S:0,C:0}  {M:0110101100,F:000,U:0,S:0,C:0}  {M:1000100110,F:000,U:0,S:0,C:0}  {M:1110001011,F:000,U:0,S:0,C:0}  {M:1110100111,F:000,U:0,S:0,C:0}  {M:0011011011,F:000,U:0,S:0,C:0}  {M:1110110110,F:000,U:0,S:0,C:0}  {M:1010010110,F:000,U:0,S:0,C:0}  {M:0110101001,F:000,U:0,S:0,C:0}  {M:0011110111,F:000,U:0,S:0,C:0}  {M:1001010001,F:000,U:0,S:0,C:0}  {M:1000001110,F:000,U:0,S:0,C:0}  {M:1101010000,F:000,U:0,S:0,C:0}  {M:1000100100,F:000,U:0,S:0,C:0}  {M:0100100001,F:000,U:0,S:0,C:0}  {M:1101110111,F:000,U:0,S:0,C:0}  {M:1110100111,F:000,U:0,S:0,C:0}  {M:1000001000,F:000,U:0,S:0,C:0}  {M:1001111101,F:000,U:0,S:0,C:0}  {M:0110010001,F:000,U:0,S:0,C:0}  {M:0101000100,F:000,U:0,S:0,C:0}  {M:0110000100,F:000,U:0,S:0,C:0}  {M:1110001001,F:000,U:0,S:0,C:0}  {M:0011011010,F:000,U:0,S:0,C:0}  {M:1001101101,F:000,U:0,S:0,C:0}  {M:1001011101,F:000,U:0,S:0,C:0}  {M:1100010001,F:000,U:0,S:0,C:0}  {M:1100011100,F:000,U:0,S:0,C:0}  {M:1110101111,F:000,U:0,S:0,C:0}  {M:1101011011,F:000,U:0,S:0,C:0}  {M:1110000010,F:000,U:0,S:0,C:0}  {M:1011101000,F:000,U:0,S:0,C:0}  {M:1101100110,F:000,U:0,S:0,C:0}  {M:0101010100,F:000,U:0,S:0,C:0}  {M:1101110101,F:000,U:0,S:0,C:0}  {M:1100000001,F:000,U:0,S:0,C:0}  {M:1001101101,F:000,U:0,S:0,C:0}  {M:0111001101,F:000,U:0,S:0,C:0}  {M:0110001001,F:000,U:0,S:0,C:0}  {M:1000110001,F:000,U:0,S:0,C:0}  {M:0011111011,F:000,U:0,S:0,C:0}  {M:1100000010,F:000,U:0,S:0,C:0}  {M:1001101110,F:000,U:0,S:0,C:0}  {M:0100011001,F:000,U:0,S:0,C:0}  {M:1000011000,F:000,U:0,S:0,C:0}  {M:1101100011,F:000,U:0,S:0,C:0}  {M:0100100100,F:000,U:0,S:0,C:0}  {M:0101001001,F:000,U:0,S:0,C:0}  {M:0101001101,F:000,U:0,S:0,C:0}  {M:1110111100,F:000,U:0,S:0,C:0}  {M:1000101011,F:000,U:0,S:0,C:0}  {M:1111010001,F:000,U:0,S:0,C:0}  {M:0101011000,F:000,U:0,S:0,C:0}  {M:0101010010,F:000,U:0,S:0,C:0}  {M:0100001001,F:000,U:0,S:0,C:0}  {M:0101111011,F:000,U:0,S:0,C:0}  {M:0110001101,F:000,U:0,S:0,C:0}  {M:1010101011,F:000,U:0,S:0,C:0}  {M:1001000000,F:000,U:0,S:0,C:0}  {M:0101111110,F:000,U:0,S:0,C:0}  {M:1010110100,F:000,U:0,S:0,C:0}  {M:1010111100,F:000,U:0,S:0,C:0}  {M:1001000011,F:000,U:0,S:0,C:0}  {M:0111011010,F:000,U:0,S:0,C:0}  {M:0110111000,F:000,U:0,S:0,C:0}  {M:1010111010,F:000,U:0,S:0,C:0}  {M:0111111010,F:000,U:0,S:0,C:0}  
+
+{M:1010000100,F:000,U:0,S:0,C:0}  {M:1001101101,F:000,U:0,S:0,C:0}  {M:0011100111,F:000,U:0,S:0,C:0}  {M:0110110010,F:000,U:0,S:0,C:0}  {M:1101010100,F:000,U:0,S:0,C:0}  {M:1100000000,F:000,U:0,S:0,C:0}  {M:1001100110,F:000,U:0,S:0,C:0}  {M:1111000111,F:000,U:0,S:0,C:0}  {M:1000110011,F:000,U:0,S:0,C:0}  {M:0101010111,F:000,U:0,S:0,C:0}  {M:0101010110,F:000,U:0,S:0,C:0}  {M:1101110001,F:000,U:0,S:0,C:0}  {M:0011100101,F:000,U:0,S:0,C:0}  {M:1011101010,F:000,U:0,S:0,C:0}  {M:0101010000,F:000,U:0,S:0,C:0}  {M:0111110011,F:000,U:0,S:0,C:0}  {M:0100101111,F:000,U:0,S:0,C:0}  {M:1001000111,F:000,U:0,S:0,C:0}  {M:1101111010,F:000,U:0,S:0,C:0}  {M:1010001111,F:000,U:0,S:0,C:0}  {M:0100111111,F:000,U:0,S:0,C:0}  {M:0111010001,F:000,U:0,S:0,C:0}  {M:0011011110,F:000,U:0,S:0,C:0}  {M:1100000111,F:000,U:0,S:0,C:0}  {M:0101000110,F:000,U:0,S:0,C:0}  {M:1000100010,F:000,U:0,S:0,C:0}  {M:0101001001,F:000,U:0,S:0,C:0}  {M:1011100010,F:000,U:0,S:0,C:0}  {M:0110010111,F:000,U:0,S:0,C:0}  {M:1011001001,F:000,U:0,S:0,C:0}  {M:1000011000,F:000,U:0,S:0,C:0}  {M:1010010100,F:000,U:0,S:0,C:0}  {M:1011111100,F:000,U:0,S:0,C:0}  {M:0011010100,F:000,U:0,S:0,C:0}  {M:1011010000,F:000,U:0,S:0,C:0}  {M:1101010001,F:000,U:0,S:0,C:0}  {M:1100101110,F:000,U:0,S:0,C:0}  {M:0101000110,F:000,U:0,S:0,C:0}  {M:1011101001,F:000,U:0,S:0,C:0}  {M:0101000100,F:000,U:0,S:0,C:0}  {M:1010011100,F:000,U:0,S:0,C:0}  {M:0100101001,F:000,U:0,S:0,C:0}  {M:0101010100,F:000,U:0,S:0,C:0}  {M:1110100000,F:000,U:0,S:0,C:0}  {M:0101001100,F:000,U:0,S:0,C:0}  {M:0011011001,F:000,U:0,S:0,C:0}  {M:1000111100,F:000,U:0,S:0,C:0}  {M:0100100011,F:000,U:0,S:0,C:0}  {M:0111100100,F:000,U:0,S:0,C:0}  {M:1110111100,F:000,U:0,S:0,C:0}  {M:1111000000,F:000,U:0,S:0,C:0}  {M:0011101001,F:000,U:0,S:0,C:0}  {M:1110101110,F:000,U:0,S:0,C:0}  {M:0110111111,F:000,U:0,S:0,C:0}  {M:0111101001,F:000,U:0,S:0,C:0}  {M:0110010010,F:000,U:0,S:0,C:0}  {M:1110100001,F:000,U:0,S:0,C:0}  {M:0111010100,F:000,U:0,S:0,C:0}  {M:1011010100,F:000,U:0,S:0,C:0}  {M:0011110011,F:000,U:0,S:0,C:0}  {M:1101011011,F:000,U:0,S:0,C:0}  {M:1101110101,F:000,U:0,S:0,C:0}  {M:1111000000,F:000,U:0,S:0,C:0}  {M:1100000001,F:000,U:0,S:0,C:0}  {M:0100101110,F:000,U:0,S:0,C:0}  {M:1000001110,F:000,U:0,S:0,C:0}  {M:0101110000,F:000,U:0,S:0,C:0}  {M:1111000010,F:000,U:0,S:0,C:0}  {M:0110000000,F:000,U:0,S:0,C:0}  {M:1011101111,F:000,U:0,S:0,C:0}  {M:1101000001,F:000,U:0,S:0,C:0}  {M:0111001100,F:000,U:0,S:0,C:0}  {M:0111100100,F:000,U:0,S:0,C:0}  {M:0110111100,F:000,U:0,S:0,C:0}  {M:1110010000,F:000,U:0,S:0,C:0}  {M:0111100000,F:000,U:0,S:0,C:0}  {M:0101111100,F:000,U:0,S:0,C:0}  {M:1000000001,F:000,U:0,S:0,C:0}  {M:1100011010,F:000,U:0,S:0,C:0}  {M:1000110010,F:000,U:0,S:0,C:0}  {M:0101101011,F:000,U:0,S:0,C:0}  {M:1100110001,F:000,U:0,S:0,C:0}  {M:0100000000,F:000,U:0,S:0,C:0}  {M:0111111111,F:000,U:0,S:0,C:0}  {M:1001110001,F:000,U:0,S:0,C:0}  {M:1001110010,F:000,U:0,S:0,C:0}  {M:0100101010,F:000,U:0,S:0,C:0}  {M:1001110110,F:000,U:0,S:0,C:0}  {M:0100100011,F:000,U:0,S:0,C:0}  {M:0011011011,F:000,U:0,S:0,C:0}  {M:1010000001,F:000,U:0,S:0,C:0}  {M:1100101100,F:000,U:0,S:0,C:0}  {M:1001101001,F:000,U:0,S:0,C:0}  {M:0111001000,F:000,U:0,S:0,C:0}  {M:0101110100,F:000,U:0,S:0,C:0}  {M:1110111011,F:000,U:0,S:0,C:0}  {M:1101000000,F:000,U:0,S:0,C:0}  {M:1010011111,F:000,U:0,S:0,C:0}  {M:1100011111,F:000,U:0,S:0,C:0}  {M:1010111001,F:000,U:0,S:0,C:0}  {M:0110110111,F:000,U:0,S:0,C:0}  {M:0101110011,F:000,U:0,S:0,C:0}  {M:0101111000,F:000,U:0,S:0,C:0}  {M:1011000000,F:000,U:0,S:0,C:0}  {M:0101010011,F:000,U:0,S:0,C:0}  {M:0101101111,F:000,U:0,S:0,C:0}  {M:1001111110,F:000,U:0,S:0,C:0}  {M:1011000001,F:000,U:0,S:0,C:0}  {M:1111010001,F:000,U:0,S:0,C:0}  {M:1011110101,F:000,U:0,S:0,C:0}  {M:1000001110,F:000,U:0,S:0,C:0}  {M:1100011001,F:000,U:0,S:0,C:0}  {M:0100101110,F:000,U:0,S:0,C:0}  {M:0011001111,F:000,U:0,S:0,C:0}  {M:1111010101,F:000,U:0,S:0,C:0}  {M:1111100010,F:000,U:0,S:0,C:0}  {M:1101100100,F:000,U:0,S:0,C:0}  {M:1110001000,F:000,U:0,S:0,C:0}  {M:1001110001,F:000,U:0,S:0,C:0}  {M:1011000000,F:000,U:0,S:0,C:0}  {M:0110110111,F:000,U:0,S:0,C:0}  {M:1100100011,F:000,U:0,S:0,C:0}  {M:1100010011,F:000,U:0,S:0,C:0}  {M:1000001111,F:000,U:0,S:0,C:0}  {M:0110000100,F:000,U:0,S:0,C:0}  {M:1101111000,F:000,U:0,S:0,C:0}  {M:1001110111,F:000,U:0,S:0,C:0}  {M:1100100110,F:000,U:0,S:0,C:0}  {M:1010110011,F:000,U:0,S:0,C:0}  {M:0111001001,F:000,U:0,S:0,C:0}  {M:1110100000,F:000,U:0,S:0,C:0}  {M:0011001101,F:000,U:0,S:0,C:0}  {M:0110011010,F:000,U:0,S:0,C:0}  {M:1100110101,F:000,U:0,S:0,C:0}  {M:0101110000,F:000,U:0,S:0,C:0}  {M:1011100100,F:000,U:0,S:0,C:0}  {M:1110100000,F:000,U:0,S:0,C:0}  {M:0111011001,F:000,U:0,S:0,C:0}  {M:0101101111,F:000,U:0,S:0,C:0}  {M:1001001000,F:000,U:0,S:0,C:0}  {M:0011100011,F:000,U:0,S:0,C:0}  {M:0101001111,F:000,U:0,S:0,C:0}  {M:1001100011,F:000,U:0,S:0,C:0}  {M:0110010110,F:000,U:0,S:0,C:0}  {M:0100110001,F:000,U:0,S:0,C:0}  {M:0011100100,F:000,U:0,S:0,C:0}  {M:1111100010,F:000,U:0,S:0,C:0}  {M:0111101000,F:000,U:0,S:0,C:0}  {M:1100110100,F:000,U:0,S:0,C:0}  {M:1100010100,F:000,U:0,S:0,C:0}  {M:1001110111,F:000,U:0,S:0,C:0}  {M:0100100010,F:000,U:0,S:0,C:0}  {M:0101010111,F:000,U:0,S:0,C:0}  {M:1100001101,F:000,U:0,S:0,C:0}  {M:0110000011,F:000,U:0,S:0,C:0}  {M:0110101010,F:000,U:0,S:0,C:0}  {M:1000011000,F:000,U:0,S:0,C:0}  {M:0111101010,F:000,U:0,S:0,C:0}  {M:0100100110,F:000,U:0,S:0,C:0}  {M:1101110001,F:000,U:0,S:0,C:0}  {M:0111010110,F:000,U:0,S:0,C:0}  {M:1011100111,F:000,U:0,S:0,C:0}  {M:1100001001,F:000,U:0,S:0,C:0}  {M:1110010000,F:000,U:0,S:0,C:0}  {M:0100111011,F:000,U:0,S:0,C:0}  {M:1010010011,F:000,U:0,S:0,C:0}  {M:0110001001,F:000,U:0,S:0,C:0}  {M:1000011011,F:000,U:0,S:0,C:0}  {M:1001110111,F:000,U:0,S:0,C:0}  {M:0011011001,F:000,U:0,S:0,C:0}  {M:1111011101,F:000,U:0,S:0,C:0}  {M:1111011000,F:000,U:0,S:0,C:0}  {M:0110000010,F:000,U:0,S:0,C:0}  {M:0101111011,F:000,U:0,S:0,C:0}  {M:1010010001,F:000,U:0,S:0,C:0}  {M:1110110110,F:000,U:0,S:0,C:0}  {M:1101110110,F:000,U:0,S:0,C:0}  {M:1011000100,F:000,U:0,S:0,C:0}  {M:1001100100,F:000,U:0,S:0,C:0}  {M:1000101110,F:000,U:0,S:0,C:0}  {M:1110011100,F:000,U:0,S:0,C:0}  {M:0100000000,F:000,U:0,S:0,C:0}  {M:0011100110,F:000,U:0,S:0,C:0}  {M:1000101010,F:000,U:0,S:0,C:0}  {M:1101011010,F:000,U:0,S:0,C:0}  {M:0110000010,F:000,U:0,S:0,C:0}  {M:0111111110,F:000,U:0,S:0,C:0}  {M:1010111001,F:000,U:0,S:0,C:0}  {M:0101111111,F:000,U:0,S:0,C:0}  {M:1110101110,F:000,U:0,S:0,C:0}  {M:1010011000,F:000,U:0,S:0,C:0}  {M:1010111111,F:000,U:0,S:0,C:0}  {M:1010000100,F:000,U:0,S:0,C:0}  {M:0110000111,F:000,U:0,S:0,C:0}  {M:0110001001,F:000,U:0,S:0,C:0}  {M:1011011010,F:000,U:0,S:0,C:0}  {M:0101110100,F:000,U:0,S:0,C:0}  {M:1000010001,F:000,U:0,S:0,C:0}  {M:0111101111,F:000,U:0,S:0,C:0}  {M:1110111011,F:000,U:0,S:0,C:0}  {M:0111110011,F:000,U:0,S:0,C:0}  {M:0110010111,F:000,U:0,S:0,C:0}  {M:1100000010,F:000,U:0,S:0,C:0}  {M:0111001100,F:000,U:0,S:0,C:0}  {M:1010010110,F:000,U:0,S:0,C:0}  {M:1100011100,F:000,U:0,S:0,C:0}  {M:0101100101,F:000,U:0,S:0,C:0}  {M:0100000101,F:000,U:0,S:0,C:0}  {M:1100011011,F:000,U:0,S:0,C:0}  {M:1010110100,F:000,U:0,S:0,C:0}  {M:1000001101,F:000,U:0,S:0,C:0}  {M:0101011110,F:000,U:0,S:0,C:0}  {M:0111011010,F:000,U:0,S:0,C:0}  {M:1100001111,F:000,U:0,S:0,C:0}  {M:1000111010,F:000,U:0,S:0,C:0}  {M:1011101001,F:000,U:0,S:0,C:0}  {M:0100100011,F:000,U:0,S:0,C:0}  {M:1011110000,F:000,U:0,S:0,C:0}  {M:0101110010,F:000,U:0,S:0,C:0}  {M:1000011000,F:000,U:0,S:0,C:0}  {M:1101000100,F:000,U:0,S:0,C:0}  {M:1000100110,F:000,U:0,S:0,C:0}  {M:0101000001,F:000,U:0,S:0,C:0}  {M:0111011001,F:000,U:0,S:0,C:0}  {M:1101011000,F:000,U:0,S:0,C:0}  {M:0111111011,F:000,U:0,S:0,C:0}  {M:0101011010,F:000,U:0,S:0,C:0}  {M:1100111100,F:000,U:0,S:0,C:0}  {M:0011001100,F:000,U:0,S:0,C:0}  {M:0111110011,F:000,U:0,S:0,C:0}  {M:1110100110,F:000,U:0,S:0,C:0}  {M:1000110001,F:000,U:0,S:0,C:0}  {M:0110101111,F:000,U:0,S:0,C:0}  {M:1100000101,F:000,U:0,S:0,C:0}  {M:1001000011,F:000,U:0,S:0,C:0}  {M:0011010110,F:000,U:0,S:0,C:0}  {M:0100011101,F:000,U:0,S:0,C:0}  {M:0100011010,F:000,U:0,S:0,C:0}  {M:0111100010,F:000,U:0,S:0,C:0}  {M:0100111010,F:000,U:0,S:0,C:0}  {M:0101001100,F:000,U:0,S:0,C:0}  {M:1000110111,F:000,U:0,S:0,C:0}  {M:0101101011,F:000,U:0,S:0,C:0}  {M:0100110000,F:000,U:0,S:0,C:0}  {M:1011111100,F:000,U:0,S:0,C:0}  {M:1010101110,F:000,U:0,S:0,C:0}  {M:1110001001,F:000,U:0,S:0,C:0}  {M:0111000011,F:000,U:0,S:0,C:0}  {M:1110101010,F:000,U:0,S:0,C:0}  {M:1101001001,F:000,U:0,S:0,C:0}  {M:1110011011,F:000,U:0,S:0,C:0}  {M:0011001100,F:000,U:0,S:0,C:0}  {M:1000110000,F:000,U:0,S:0,C:0}  {M:0110110010,F:000,U:0,S:0,C:0}  {M:1100100100,F:000,U:0,S:0,C:0}  {M:0011001101,F:000,U:0,S:0,C:0}  {M:1000011100,F:000,U:0,S:0,C:0}  {M:1001110101,F:000,U:0,S:0,C:0}  {M:0110110011,F:000,U:0,S:0,C:0}  {M:0100010000,F:000,U:0,S:0,C:0}  {M:1000110101,F:000,U:0,S:0,C:0}  {M:0110011001,F:000,U:0,S:0,C:0}  {M:0011111001,F:000,U:0,S:0,C:0}  {M:0101110101,F:000,U:0,S:0,C:0}  {M:0110101010,F:000,U:0,S:0,C:0}  {M:0110110101,F:000,U:0,S:0,C:0}  {M:0101101101,F:000,U:0,S:0,C:0}  {M:1011001101,F:000,U:0,S:0,C:0}  {M:0011010101,F:000,U:0,S:0,C:0}  {M:1011010110,F:000,U:0,S:0,C:0}  {M:1011001010,F:000,U:0,S:0,C:0}  {M:1111011110,F:000,U:0,S:0,C:0}  {M:0101000111,F:000,U:0,S:0,C:0}  {M:1010011100,F:000,U:0,S:0,C:0}  {M:1100110001,F:000,U:0,S:0,C:0}  {M:0101101100,F:000,U:0,S:0,C:0}  {M:1111100110,F:000,U:0,S:0,C:0}  {M:1100010000,F:000,U:0,S:0,C:0}  {M:1000001011,F:000,U:0,S:0,C:0}  {M:0011100100,F:000,U:0,S:0,C:0}  {M:1100101111,F:000,U:0,S:0,C:0}  {M:1000111101,F:000,U:0,S:0,C:0}  {M:1100101011,F:000,U:0,S:0,C:0}  {M:1010101010,F:000,U:0,S:0,C:0}  {M:0111101010,F:000,U:0,S:0,C:0}  {M:0101100011,F:000,U:0,S:0,C:0}  {M:0011011110,F:000,U:0,S:0,C:0}  {M:1110101011,F:000,U:0,S:0,C:0}  {M:0111111100,F:000,U:0,S:0,C:0}  {M:1101000110,F:000,U:0,S:0,C:0}  {M:0111000001,F:000,U:0,S:0,C:0}  {M:1011110011,F:000,U:0,S:0,C:0}  {M:1011110100,F:000,U:0,S:0,C:0}  {M:1001111101,F:000,U:0,S:0,C:0}  {M:1100011001,F:000,U:0,S:0,C:0}  {M:0111001100,F:000,U:0,S:0,C:0}  {M:1010100100,F:000,U:0,S:0,C:0}  {M:0100111110,F:000,U:0,S:0,C:0}  {M:1001001011,F:000,U:0,S:0,C:0}  {M:1001010001,F:000,U:0,S:0,C:0}  {M:1110101001,F:000,U:0,S:0,C:0}  {M:0101010111,F:000,U:0,S:0,C:0}  {M:0100101100,F:000,U:0,S:0,C:0}  {M:1011100000,F:000,U:0,S:0,C:0}  {M:1100011100,F:000,U:0,S:0,C:0}  {M:1110011101,F:000,U:0,S:0,C:0}  {M:0101000001,F:000,U:0,S:0,C:0}  {M:0111101110,F:000,U:0,S:0,C:0}  {M:1101110011,F:000,U:0,S:0,C:0}  {M:1000111000,F:000,U:0,S:0,C:0}  {M:0110010010,F:000,U:0,S:0,C:0}  {M:0110110010,F:000,U:0,S:0,C:0}  {M:1000000101,F:000,U:0,S:0,C:0}  {M:0100010001,F:000,U:0,S:0,C:0}  {M:1011001110,F:000,U:0,S:0,C:0}  {M:1110010100,F:000,U:0,S:0,C:0}  {M:1011011110,F:000,U:0,S:0,C:0}  {M:1110111011,F:000,U:0,S:0,C:0}  {M:1110010101,F:000,U:0,S:0,C:0}  {M:0101100001,F:000,U:0,S:0,C:0}  {M:1010111100,F:000,U:0,S:0,C:0}  {M:0110011101,F:000,U:0,S:0,C:0}  {M:1011100110,F:000,U:0,S:0,C:0}  {M:1110111110,F:000,U:0,S:0,C:0}  {M:0110001100,F:000,U:0,S:0,C:0}  {M:1101010101,F:000,U:0,S:0,C:0}  {M:0101011101,F:000,U:0,S:0,C:0}  {M:0011110000,F:000,U:0,S:0,C:0}  {M:1101011010,F:000,U:0,S:0,C:0}  {M:1101001111,F:000,U:0,S:0,C:0}  {M:0101010001,F:000,U:0,S:0,C:0}  {M:1011011101,F:000,U:0,S:0,C:0}  {M:0101000001,F:000,U:0,S:0,C:0}  {M:0111100100,F:000,U:0,S:0,C:0}  {M:1000101011,F:000,U:0,S:0,C:0}  {M:1101100110,F:000,U:0,S:0,C:0}  {M:1111010001,F:000,U:0,S:0,C:0}  {M:1101011100,F:000,U:0,S:0,C:0}  {M:1110001101,F:000,U:0,S:0,C:0}  {M:0111101101,F:000,U:0,S:0,C:0}  {M:1110000100,F:000,U:0,S:0,C:0}  {M:1000010100,F:000,U:0,S:0,C:0}  {M:1000010001,F:000,U:0,S:0,C:0}  {M:1000000101,F:000,U:0,S:0,C:0}  {M:0101000100,F:000,U:0,S:0,C:0}  {M:1001000011,F:000,U:0,S:0,C:0}  {M:0101110101,F:000,U:0,S:0,C:0}  {M:1000111001,F:000,U:0,S:0,C:0}  {M:0101101111,F:000,U:0,S:0,C:0}  {M:1110011111,F:000,U:0,S:0,C:0}  {M:0111110010,F:000,U:0,S:0,C:0}  {M:1011010010,F:000,U:0,S:0,C:0}  {M:0011010110,F:000,U:0,S:0,C:0}  {M:1110100010,F:000,U:0,S:0,C:0}  {M:1100111011,F:000,U:0,S:0,C:0}  {M:1101111010,F:000,U:0,S:0,C:0}  {M:1011111111,F:000,U:0,S:0,C:0}  {M:1111001000,F:000,U:0,S:0,C:0}  {M:1001001110,F:000,U:0,S:0,C:0}  {M:1101111000,F:000,U:0,S:0,C:0}  {M:1110010001,F:000,U:0,S:0,C:0}  {M:1110010011,F:000,U:0,S:0,C:0}  {M:1000101001,F:000,U:0,S:0,C:0}  {M:0100100010,F:000,U:0,S:0,C:0}  {M:1110101101,F:000,U:0,S:0,C:0}  {M:0100010100,F:000,U:0,S:0,C:0}  {M:1110100100,F:000,U:0,S:0,C:0}  {M:1010000110,F:000,U:0,S:0,C:0}  {M:1010010010,F:000,U:0,S:0,C:0}  {M:1011111111,F:000,U:0,S:0,C:0}  {M:0011110000,F:000,U:0,S:0,C:0}  {M:1100100101,F:000,U:0,S:0,C:0}  {M:1000010111,F:000,U:0,S:0,C:0}  {M:1010101001,F:000,U:0,S:0,C:0}  {M:1101010011,F:000,U:0,S:0,C:0}  {M:0111100110,F:000,U:0,S:0,C:0}  {M:1000111010,F:000,U:0,S:0,C:0}  {M:0111001011,F:000,U:0,S:0,C:0}  {M:1011010100,F:000,U:0,S:0,C:0}  {M:1011111011,F:000,U:0,S:0,C:0}  {M:1011101010,F:000,U:0,S:0,C:0}  {M:0110110111,F:000,U:0,S:0,C:0}  {M:0110001011,F:000,U:0,S:0,C:0}  {M:0111101011,F:000,U:0,S:0,C:0} 
+
+
+Searching Executed Successfully...
+
+Final State: 
+{M:1111100110,F:110,U:1,S:0,C:10}  
+
+{M:0101010100,F:101,U:1,S:1,C:10}  {M:1110000100,F:101,U:1,S:1,C:10}  {M:1011011001,F:011,U:1,S:0,C:10}  
+
+{M:1101010101,F:101,U:1,S:1,C:10}  {M:1101001001,F:101,U:1,S:1,C:10}  {M:1100000110,F:011,U:1,S:0,C:10}  {M:0100110010,F:011,U:1,S:1,C:10}  {M:1000001110,F:011,U:1,S:0,C:10}  {M:0101001101,F:101,U:1,S:1,C:10}  
+
+{M:0101011000,F:101,U:1,S:0,C:10}  {M:1000011100,F:011,U:1,S:1,C:10}  {M:0110000010,F:011,U:1,S:0,C:10}  {M:0101111000,F:011,U:1,S:1,C:10}  {M:0011011110,F:101,U:1,S:0,C:10}  {M:1110101100,F:101,U:1,S:0,C:10}  {M:1010000010,F:011,U:1,S:1,C:10}  {M:1101001101,F:101,U:1,S:0,C:10}  {M:0110000110,F:011,U:1,S:0,C:10}  {M:0110010101,F:101,U:1,S:0,C:10}  {M:0101000100,F:011,U:1,S:0,C:10}  {M:1001010111,F:011,U:1,S:1,C:10}  
+
+{M:1100000001,F:011,U:1,S:1,C:10}  {M:1001011100,F:101,U:1,S:0,C:10}  {M:0110001001,F:011,U:1,S:1,C:10}  {M:1100110101,F:011,U:1,S:1,C:10}  {M:1010010010,F:101,U:1,S:0,C:10}  {M:1100100100,F:011,U:1,S:1,C:10}  {M:0111011001,F:011,U:1,S:1,C:10}  {M:1001110000,F:011,U:1,S:1,C:10}  {M:1101101010,F:011,U:1,S:0,C:10}  {M:1100100110,F:101,U:1,S:0,C:10}  {M:1001000110,F:011,U:1,S:1,C:10}  {M:1001111110,F:011,U:1,S:0,C:10}  {M:1001101010,F:101,U:1,S:1,C:10}  {M:0101111110,F:011,U:1,S:0,C:10}  {M:0110010010,F:011,U:1,S:0,C:10}  {M:1110101010,F:101,U:1,S:0,C:10}  {M:1100100011,F:101,U:1,S:0,C:10}  {M:1011111011,F:011,U:1,S:1,C:10}  {M:0111010001,F:011,U:1,S:1,C:10}  {M:0100011101,F:011,U:1,S:0,C:10}  {M:0101010111,F:101,U:1,S:0,C:10}  {M:0011011011,F:011,U:1,S:0,C:10}  {M:1110100001,F:101,U:1,S:1,C:10}  {M:1000001001,F:101,U:1,S:0,C:10}  
+
+{M:1001010111,F:101,U:1,S:1,C:10}  {M:0110000100,F:011,U:1,S:0,C:10}  {M:1000101001,F:101,U:1,S:0,C:10}  {M:0111000110,F:101,U:1,S:0,C:10}  {M:1101000110,F:101,U:1,S:1,C:10}  {M:1010010110,F:101,U:1,S:1,C:10}  {M:1011111111,F:101,U:1,S:1,C:10}  {M:0111101010,F:101,U:1,S:1,C:10}  {M:0111101110,F:101,U:1,S:1,C:10}  {M:1100010100,F:011,U:1,S:0,C:10}  {M:1100110011,F:101,U:1,S:1,C:10}  {M:1000111010,F:011,U:1,S:0,C:10}  {M:1000110000,F:011,U:1,S:1,C:10}  {M:1100110000,F:011,U:1,S:1,C:10}  {M:1101000000,F:101,U:1,S:1,C:10}  {M:1101000100,F:110,U:1,S:0,C:10}  {M:0111001000,F:101,U:1,S:0,C:10}  {M:1010010011,F:011,U:1,S:0,C:10}  {M:1010101110,F:101,U:1,S:0,C:10}  {M:1000111001,F:011,U:1,S:0,C:10}  {M:0011010110,F:101,U:1,S:1,C:10}  {M:0111101011,F:011,U:1,S:1,C:10}  {M:1011101010,F:011,U:1,S:0,C:10}  {M:1101111010,F:110,U:1,S:0,C:10}  {M:1010111001,F:011,U:1,S:1,C:10}  {M:0100111111,F:101,U:1,S:1,C:10}  {M:1110001000,F:101,U:1,S:0,C:10}  {M:0100000101,F:101,U:1,S:1,C:10}  {M:0101010111,F:011,U:1,S:0,C:10}  {M:1000100011,F:011,U:1,S:0,C:10}  {M:0110101101,F:011,U:1,S:0,C:10}  {M:1101010011,F:101,U:1,S:0,C:10}  {M:1100000010,F:011,U:1,S:0,C:10}  {M:1001110001,F:011,U:1,S:0,C:10}  {M:1011100111,F:011,U:1,S:1,C:10}  {M:0011100100,F:101,U:1,S:1,C:10}  {M:0100101110,F:011,U:1,S:1,C:10}  {M:1110000010,F:110,U:1,S:0,C:10}  {M:1110011111,F:101,U:1,S:0,C:10}  {M:1010000010,F:101,U:1,S:1,C:10}  {M:1100111010,F:011,U:1,S:0,C:10}  {M:0110000010,F:011,U:1,S:0,C:10}  {M:1011000000,F:011,U:1,S:0,C:10}  {M:0011010100,F:101,U:1,S:0,C:10}  {M:0101110100,F:101,U:1,S:0,C:10}  {M:1101011011,F:101,U:1,S:1,C:10}  {M:0111001011,F:011,U:1,S:1,C:10}  {M:1010000110,F:011,U:1,S:0,C:10}  
+
+{M:1010011010,F:110,U:1,S:0,C:10}  {M:0111110011,F:011,U:1,S:1,C:10}  {M:1101111010,F:110,U:1,S:0,C:10}  {M:1001000011,F:011,U:1,S:1,C:10}  {M:0111011010,F:011,U:1,S:0,C:10}  {M:1100100101,F:011,U:1,S:0,C:10}  {M:0101111000,F:101,U:1,S:0,C:10}  {M:1000110011,F:011,U:1,S:0,C:10}  {M:0110111000,F:101,U:1,S:1,C:10}  {M:0011111001,F:101,U:1,S:1,C:10}  {M:0111101111,F:011,U:1,S:1,C:10}  {M:0101101101,F:011,U:1,S:1,C:10}  {M:0100010000,F:101,U:1,S:1,C:10}  {M:0100101111,F:011,U:1,S:1,C:10}  {M:1001110101,F:101,U:1,S:1,C:10}  {M:1001101110,F:101,U:1,S:1,C:10}  {M:1010010001,F:011,U:1,S:0,C:10}  {M:1110101011,F:011,U:1,S:1,C:10}  {M:1111000000,F:101,U:1,S:0,C:10}  {M:0101111110,F:011,U:1,S:0,C:10}  {M:0111100000,F:011,U:1,S:0,C:10}  {M:0111100110,F:011,U:1,S:1,C:10}  {M:0100101101,F:101,U:1,S:0,C:10}  {M:0101000001,F:011,U:1,S:0,C:10}  {M:1110010000,F:011,U:1,S:1,C:10}  {M:0110110111,F:101,U:1,S:1,C:10}  {M:1010101001,F:101,U:1,S:1,C:10}  {M:0100011100,F:011,U:1,S:1,C:10}  {M:1010011101,F:101,U:1,S:0,C:10}  {M:1110010011,F:011,U:1,S:1,C:10}  {M:1011110111,F:011,U:1,S:0,C:10}  {M:0110101010,F:101,U:1,S:0,C:10}  {M:0101100011,F:101,U:1,S:1,C:10}  {M:1110111110,F:101,U:1,S:0,C:10}  {M:0111000001,F:101,U:1,S:0,C:10}  {M:1001101001,F:101,U:1,S:1,C:10}  {M:1010011011,F:011,U:1,S:1,C:10}  {M:0011001010,F:011,U:1,S:0,C:10}  {M:0100000001,F:101,U:1,S:0,C:10}  {M:1010000110,F:101,U:1,S:0,C:10}  {M:0011101100,F:101,U:1,S:1,C:10}  {M:0011011010,F:011,U:1,S:1,C:10}  {M:1110011001,F:110,U:1,S:1,C:10}  {M:1100101110,F:110,U:1,S:0,C:10}  {M:1100010001,F:011,U:1,S:0,C:10}  {M:0111110010,F:101,U:1,S:1,C:10}  {M:0011010101,F:011,U:1,S:1,C:10}  {M:0111111000,F:011,U:1,S:0,C:10}  {M:0111001101,F:101,U:1,S:1,C:10}  {M:0101001001,F:011,U:1,S:0,C:10}  {M:0100101001,F:101,U:1,S:1,C:10}  {M:1011010010,F:101,U:1,S:1,C:10}  {M:1001101101,F:101,U:1,S:0,C:10}  {M:0011011010,F:011,U:1,S:0,C:10}  {M:0100110111,F:011,U:1,S:0,C:10}  {M:1101111110,F:011,U:1,S:1,C:10}  {M:1111011000,F:011,U:1,S:0,C:10}  {M:1011110011,F:011,U:1,S:1,C:10}  {M:1101011000,F:101,U:1,S:0,C:10}  {M:0100011001,F:101,U:1,S:0,C:10}  {M:1011101000,F:101,U:1,S:0,C:10}  {M:1000100000,F:101,U:1,S:0,C:10}  {M:1000011000,F:101,U:1,S:0,C:10}  {M:0100100010,F:011,U:1,S:0,C:10}  {M:0110000110,F:101,U:1,S:0,C:10}  {M:1011000000,F:101,U:1,S:1,C:10}  {M:1010111001,F:101,U:1,S:0,C:10}  {M:0101000111,F:011,U:1,S:0,C:10}  {M:1011110010,F:011,U:1,S:1,C:10}  {M:0111010100,F:011,U:1,S:1,C:10}  {M:0100111101,F:101,U:1,S:0,C:10}  {M:0100000100,F:101,U:1,S:1,C:10}  {M:0111010101,F:101,U:1,S:1,C:10}  {M:1101110011,F:101,U:1,S:0,C:10}  {M:1010010010,F:101,U:1,S:0,C:10}  {M:1100011111,F:101,U:1,S:1,C:10}  {M:0101000101,F:011,U:1,S:1,C:10}  {M:0100111110,F:101,U:1,S:0,C:10}  {M:0101000100,F:011,U:1,S:0,C:10}  {M:0101010000,F:101,U:1,S:1,C:10}  {M:0111001001,F:101,U:1,S:0,C:10}  {M:1110101100,F:110,U:1,S:0,C:10}  {M:1100101110,F:011,U:1,S:0,C:10}  {M:0101000101,F:101,U:1,S:0,C:10}  {M:0111101010,F:101,U:1,S:0,C:10}  {M:1001100001,F:101,U:1,S:1,C:10}  {M:0111101000,F:101,U:1,S:0,C:10}  {M:1110000100,F:101,U:1,S:0,C:10}  {M:1100111100,F:101,U:1,S:1,C:10}  {M:1110100110,F:110,U:1,S:0,C:10}  {M:0111001100,F:011,U:1,S:0,C:10}  {M:0011100000,F:101,U:1,S:1,C:10}  {M:0110101011,F:101,U:1,S:1,C:10}  {M:0110000011,F:011,U:1,S:0,C:10}  {M:1010010001,F:101,U:1,S:0,C:10}  {M:1110100000,F:110,U:1,S:0,C:10}  
+
+{M:0100111001,F:011,U:1,S:0,C:10}  {M:1010000011,F:110,U:1,S:1,C:10}  {M:1110101101,F:110,U:1,S:1,C:10}  {M:1001001100,F:011,U:1,S:0,C:10}  {M:1001000011,F:011,U:1,S:0,C:10}  {M:1001100000,F:110,U:1,S:0,C:10}  {M:0100111111,F:011,U:1,S:1,C:10}  {M:0111001011,F:110,U:1,S:1,C:10}  {M:0101011101,F:011,U:1,S:0,C:10}  {M:1000001110,F:110,U:1,S:0,C:10}  {M:1001110111,F:011,U:1,S:0,C:10}  {M:1001000011,F:110,U:1,S:1,C:10}  {M:0110111001,F:101,U:1,S:0,C:10}  {M:1011101101,F:101,U:1,S:0,C:10}  {M:1001110101,F:101,U:1,S:0,C:10}  {M:1010101001,F:101,U:1,S:0,C:10}  {M:1101001011,F:011,U:1,S:1,C:10}  {M:1110111101,F:110,U:1,S:1,C:10}  {M:1101010001,F:011,U:1,S:1,C:10}  {M:1111011101,F:010,U:1,S:1,C:10}  {M:0100010100,F:101,U:1,S:1,C:10}  {M:0111110001,F:110,U:1,S:1,C:10}  {M:1011101101,F:101,U:1,S:1,C:10}  {M:0100100010,F:011,U:1,S:1,C:10}  {M:1011010111,F:110,U:1,S:1,C:10}  {M:1011110100,F:101,U:1,S:1,C:10}  {M:0111101111,F:011,U:1,S:1,C:10}  {M:1001010100,F:101,U:1,S:1,C:10}  {M:0101011110,F:011,U:1,S:0,C:10}  {M:1100011001,F:110,U:1,S:1,C:10}  {M:0100111011,F:011,U:1,S:0,C:10}  {M:0011010011,F:101,U:1,S:1,C:10}  {M:1011101010,F:101,U:1,S:0,C:10}  {M:1110010000,F:110,U:1,S:0,C:10}  {M:1110100100,F:101,U:1,S:1,C:10}  {M:0011111011,F:101,U:1,S:1,C:10}  {M:0111010001,F:101,U:1,S:0,C:10}  {M:0110011001,F:011,U:1,S:0,C:10}  {M:0100101011,F:101,U:1,S:0,C:10}  {M:1001010001,F:110,U:1,S:1,C:10}  {M:0110110100,F:101,U:1,S:0,C:10}  {M:0110111111,F:011,U:1,S:1,C:10}  {M:1111010001,F:110,U:1,S:1,C:10}  {M:1011100111,F:101,U:1,S:0,C:10}  {M:0101111011,F:011,U:1,S:0,C:10}  {M:1110010100,F:110,U:1,S:0,C:10}  {M:0101100111,F:101,U:1,S:0,C:10}  {M:0011001101,F:011,U:1,S:1,C:10}  {M:0110011101,F:011,U:1,S:1,C:10}  {M:0101000110,F:011,U:1,S:1,C:10}  {M:1011110010,F:110,U:1,S:0,C:10}  {M:0101001010,F:101,U:1,S:1,C:10}  {M:1010111101,F:101,U:1,S:0,C:10}  {M:1110001111,F:110,U:1,S:1,C:10}  {M:0011011011,F:011,U:1,S:1,C:10}  {M:1011110000,F:011,U:1,S:1,C:10}  {M:0111101101,F:011,U:1,S:1,C:10}  {M:1101100110,F:110,U:1,S:0,C:10}  {M:0101010001,F:011,U:1,S:1,C:10}  {M:1001011101,F:110,U:1,S:1,C:10}  {M:1100110100,F:110,U:1,S:0,C:10}  {M:0100001111,F:011,U:1,S:1,C:10}  {M:1000101110,F:110,U:1,S:0,C:10}  {M:0100100010,F:011,U:1,S:0,C:10}  {M:1011110101,F:110,U:1,S:1,C:10}  {M:0110001001,F:011,U:1,S:1,C:10}  {M:0100101011,F:101,U:1,S:0,C:10}  {M:0110110010,F:011,U:1,S:0,C:10}  {M:1011010100,F:110,U:1,S:0,C:10}  {M:0011100100,F:011,U:1,S:0,C:10}  {M:1000000001,F:101,U:1,S:1,C:10}  {M:0101110000,F:101,U:1,S:1,C:10}  {M:1000110101,F:101,U:1,S:1,C:10}  {M:0110110010,F:110,U:1,S:0,C:10}  {M:1110000011,F:011,U:1,S:0,C:10}  {M:1100010010,F:110,U:1,S:0,C:10}  {M:1001110010,F:101,U:1,S:0,C:10}  {M:1110101011,F:011,U:1,S:0,C:10}  {M:1100011011,F:011,U:1,S:1,C:10}  {M:0101110000,F:011,U:1,S:0,C:10}  {M:0110010111,F:110,U:1,S:1,C:10}  {M:1010111010,F:011,U:1,S:1,C:10}  {M:0111110011,F:011,U:1,S:1,C:10}  {M:1010110010,F:011,U:1,S:0,C:10}  {M:1011000001,F:101,U:1,S:1,C:10}  {M:1010000100,F:101,U:1,S:0,C:10}  {M:0110000010,F:011,U:1,S:0,C:10}  {M:0011010010,F:011,U:1,S:0,C:10}  {M:1111011000,F:110,U:1,S:0,C:10}  {M:1010101100,F:110,U:1,S:0,C:10}  {M:1000111101,F:101,U:1,S:1,C:10}  {M:0101000001,F:101,U:1,S:1,C:10}  {M:0011011110,F:101,U:1,S:1,C:10}  {M:1011001000,F:110,U:1,S:0,C:10}  {M:1101110010,F:110,U:1,S:0,C:10}  {M:0110010101,F:101,U:1,S:0,C:10}  {M:0110000010,F:101,U:1,S:0,C:10}  {M:1001100010,F:011,U:1,S:1,C:10}  {M:0111111100,F:011,U:1,S:0,C:10}  {M:1000101001,F:110,U:1,S:1,C:10}  {M:0100001101,F:011,U:1,S:0,C:10}  {M:1110001001,F:110,U:1,S:1,C:10}  {M:1110100011,F:110,U:1,S:1,C:10}  {M:1100110110,F:011,U:1,S:1,C:10}  {M:1000100100,F:011,U:1,S:1,C:10}  {M:0110110011,F:101,U:1,S:0,C:10}  {M:1100000010,F:101,U:1,S:0,C:10}  {M:0111000011,F:011,U:1,S:1,C:10}  {M:0101010111,F:101,U:1,S:0,C:10}  {M:0101101011,F:110,U:1,S:1,C:10}  {M:1110001001,F:101,U:1,S:1,C:10}  {M:0011001101,F:011,U:1,S:1,C:10}  {M:1111001000,F:101,U:1,S:0,C:10}  {M:1011101111,F:011,U:1,S:0,C:10}  {M:0100000000,F:101,U:1,S:1,C:10}  {M:1001101101,F:110,U:1,S:1,C:10}  {M:0011100011,F:011,U:1,S:0,C:10}  {M:0111110100,F:011,U:1,S:0,C:10}  {M:1011100011,F:110,U:1,S:1,C:10}  {M:1100111000,F:110,U:1,S:0,C:10}  {M:1011011110,F:110,U:1,S:0,C:10}  {M:1011111111,F:101,U:1,S:0,C:10}  {M:1010001010,F:110,U:1,S:0,C:10}  {M:0110101010,F:101,U:1,S:0,C:10}  {M:1001110101,F:110,U:1,S:1,C:10}  {M:0100111100,F:101,U:1,S:0,C:10}  {M:0011101001,F:011,U:1,S:0,C:10}  {M:1001101110,F:101,U:1,S:1,C:10}  {M:1001111101,F:011,U:1,S:1,C:10}  {M:1111011110,F:110,U:1,S:0,C:10}  {M:0101000001,F:011,U:1,S:1,C:10}  {M:0110101010,F:011,U:1,S:1,C:10}  {M:0100001001,F:011,U:1,S:0,C:10}  {M:1100101111,F:101,U:1,S:0,C:10}  {M:0110110011,F:101,U:1,S:0,C:10}  {M:0100000010,F:011,U:1,S:0,C:10}  {M:1001100100,F:011,U:1,S:1,C:10}  {M:0101000111,F:011,U:1,S:0,C:10}  {M:1100110101,F:110,U:1,S:1,C:10}  {M:0011100100,F:011,U:1,S:0,C:10}  {M:1000001011,F:110,U:1,S:1,C:10}  {M:0100100011,F:011,U:1,S:0,C:10}  {M:0101101111,F:011,U:1,S:0,C:10}  {M:0100110001,F:101,U:1,S:1,C:10}  {M:1000011000,F:101,U:1,S:0,C:10}  {M:0110011011,F:101,U:1,S:1,C:10}  {M:1010110100,F:110,U:1,S:0,C:10}  {M:1110001000,F:110,U:1,S:0,C:10}  {M:1100101011,F:110,U:1,S:1,C:10}  {M:1101110000,F:110,U:1,S:0,C:10}  {M:1010110100,F:011,U:1,S:1,C:10}  {M:1100110101,F:110,U:1,S:1,C:10}  {M:1110111011,F:110,U:1,S:1,C:10}  {M:0110100011,F:101,U:1,S:0,C:10}  {M:1000101011,F:101,U:1,S:0,C:10}  {M:1000011110,F:011,U:1,S:0,C:10}  {M:0101001100,F:011,U:1,S:0,C:10}  {M:0111011101,F:101,U:1,S:1,C:10}  {M:1001001000,F:101,U:1,S:0,C:10}  {M:1110010001,F:110,U:1,S:1,C:10}  {M:1101010000,F:110,U:1,S:0,C:10}  {M:1000111010,F:101,U:1,S:0,C:10}  {M:1100101011,F:110,U:1,S:1,C:10}  {M:1000001101,F:110,U:1,S:1,C:10}  {M:1111001100,F:110,U:1,S:0,C:10}  {M:0011011111,F:101,U:1,S:1,C:10}  {M:0011100100,F:101,U:1,S:0,C:10}  {M:0100101100,F:011,U:1,S:0,C:10}  {M:0110110010,F:101,U:1,S:0,C:10}  {M:1100000000,F:101,U:1,S:0,C:10}  {M:1010100101,F:110,U:1,S:1,C:10}  {M:1100100110,F:101,U:1,S:1,C:10}  {M:1000101011,F:101,U:1,S:1,C:10}  {M:0011100101,F:101,U:1,S:0,C:10}  {M:1000111111,F:110,U:1,S:1,C:10}  {M:1011100000,F:011,U:1,S:0,C:10}  {M:0111111110,F:011,U:1,S:0,C:10}  {M:0011001101,F:101,U:1,S:1,C:10}  {M:0110101010,F:101,U:1,S:0,C:10}  {M:1100011100,F:011,U:1,S:1,C:10}  {M:1110111100,F:110,U:1,S:0,C:10}  {M:0111100100,F:011,U:1,S:1,C:10}  {M:1001010001,F:011,U:1,S:1,C:10}  {M:1111010001,F:110,U:1,S:1,C:10}  {M:1100000111,F:101,U:1,S:1,C:10}  {M:0111001100,F:011,U:1,S:1,C:10}  {M:1100011100,F:110,U:1,S:0,C:10}  {M:1011111100,F:110,U:1,S:0,C:10}  {M:0100100011,F:101,U:1,S:1,C:10}  {M:1110110110,F:110,U:1,S:0,C:10}  {M:0011110100,F:101,U:1,S:1,C:10}  {M:1000100100,F:101,U:1,S:1,C:10}  
+
+{M:0111111010,F:110,U:1,S:0,C:10}  {M:0011001100,F:110,U:1,S:0,C:10}  {M:0011100110,F:110,U:1,S:0,C:10}  {M:0101110100,F:110,U:1,S:0,C:10}  {M:1001100110,F:110,U:1,S:0,C:10}  {M:1011001010,F:110,U:1,S:0,C:10}  {M:1010001010,F:110,U:1,S:0,C:10}  {M:0111000010,F:110,U:1,S:0,C:10}  {M:1100010000,F:110,U:1,S:0,C:10}  {M:1001110110,F:110,U:1,S:0,C:10}  {M:0100100011,F:110,U:1,S:1,C:10}  {M:0110001011,F:110,U:1,S:1,C:10}  {M:1101011101,F:110,U:1,S:1,C:10}  {M:0101101011,F:110,U:1,S:1,C:10}  {M:0011001011,F:110,U:1,S:1,C:10}  {M:0101111011,F:110,U:1,S:1,C:10}  {M:1000100110,F:110,U:1,S:0,C:10}  {M:0111001100,F:110,U:1,S:0,C:10}  {M:0101010110,F:110,U:1,S:0,C:10}  {M:0011011110,F:110,U:1,S:0,C:10}  {M:1101011110,F:110,U:1,S:0,C:10}  {M:1101010011,F:110,U:1,S:1,C:10}  {M:0101001001,F:110,U:1,S:1,C:10}  {M:0101010111,F:110,U:1,S:1,C:10}  {M:0101000101,F:110,U:1,S:1,C:10}  {M:1101100100,F:110,U:1,S:0,C:10}  {M:0110110010,F:110,U:1,S:0,C:10}  {M:1110011000,F:110,U:1,S:0,C:10}  {M:0101110101,F:110,U:1,S:1,C:10}  {M:1111000010,F:110,U:1,S:0,C:10}  {M:1001101010,F:110,U:1,S:0,C:10}  {M:1011010000,F:110,U:1,S:0,C:10}  {M:1101001111,F:110,U:1,S:1,C:10}  {M:1010101010,F:110,U:1,S:0,C:10}  {M:1000101110,F:110,U:1,S:0,C:10}  {M:1101110001,F:110,U:1,S:1,C:10}  {M:1110000111,F:110,U:1,S:1,C:10}  {M:0101111100,F:110,U:1,S:0,C:10}  {M:1111011101,F:110,U:1,S:1,C:10}  {M:0011100110,F:110,U:1,S:0,C:10}  {M:0100010001,F:110,U:1,S:1,C:10}  {M:1010101011,F:110,U:1,S:1,C:10}  {M:0101110010,F:110,U:1,S:0,C:10}  {M:0110001001,F:110,U:1,S:1,C:10}  {M:0100011100,F:110,U:1,S:0,C:10}  {M:1110110111,F:110,U:1,S:1,C:10}  {M:1110001011,F:110,U:1,S:1,C:10}  {M:1011001001,F:110,U:1,S:1,C:10}  {M:1000001111,F:110,U:1,S:1,C:10}  {M:0101010100,F:110,U:1,S:0,C:10}  {M:1100011100,F:110,U:1,S:0,C:10}  {M:1101110111,F:110,U:1,S:1,C:10}  {M:1110111011,F:110,U:1,S:1,C:10}  {M:0101111111,F:110,U:1,S:1,C:10}  {M:1000111100,F:110,U:1,S:0,C:10}  {M:1010011111,F:110,U:1,S:1,C:10}  {M:0110001100,F:110,U:1,S:0,C:10}  {M:0101011010,F:110,U:1,S:0,C:10}  {M:1010110011,F:110,U:1,S:1,C:10}  {M:0011110111,F:110,U:1,S:1,C:10}  {M:1011010100,F:110,U:1,S:0,C:10}  {M:0111001001,F:110,U:1,S:1,C:10}  {M:0100010110,F:110,U:1,S:0,C:10}  {M:1110101111,F:110,U:1,S:1,C:10}  {M:1011001110,F:110,U:1,S:0,C:10}  {M:1110010110,F:110,U:1,S:0,C:10}  {M:0101111000,F:110,U:1,S:0,C:10}  {M:1100001111,F:110,U:1,S:1,C:10}  {M:1101011010,F:110,U:1,S:0,C:10}  {M:1111011101,F:110,U:1,S:1,C:10}  {M:0011010110,F:110,U:1,S:0,C:10}  {M:1100001001,F:110,U:1,S:1,C:10}  {M:0111111011,F:110,U:1,S:1,C:10}  {M:1110101110,F:110,U:1,S:0,C:10}  {M:1111100010,F:110,U:1,S:0,C:10}  {M:1000111001,F:110,U:1,S:1,C:10}  {M:0100100100,F:110,U:1,S:0,C:10}  {M:1010100100,F:110,U:1,S:0,C:10}  {M:0111011001,F:110,U:1,S:1,C:10}  {M:0110010100,F:110,U:1,S:0,C:10}  {M:1000001110,F:110,U:1,S:0,C:10}  {M:1101010100,F:110,U:1,S:0,C:10}  {M:1000110001,F:110,U:1,S:1,C:10}  {M:0011011001,F:110,U:1,S:1,C:10}  {M:0111100100,F:110,U:1,S:0,C:10}  {M:1001000000,F:110,U:1,S:0,C:10}  {M:1101010111,F:110,U:1,S:1,C:10}  {M:1101111000,F:110,U:1,S:0,C:10}  {M:1010011100,F:110,U:1,S:0,C:10}  {M:0111011010,F:110,U:1,S:0,C:10}  {M:0111111100,F:110,U:1,S:0,C:10}  {M:0100011001,F:110,U:1,S:1,C:10}  {M:1000000011,F:110,U:1,S:1,C:10}  {M:1100110010,F:110,U:1,S:0,C:10}  {M:1100001011,F:110,U:1,S:1,C:10}  {M:1011010100,F:110,U:1,S:0,C:10}  {M:1111100011,F:110,U:1,S:1,C:10}  {M:0011110000,F:110,U:1,S:0,C:10}  {M:1111010001,F:110,U:1,S:1,C:10}  {M:0011110000,F:110,U:1,S:0,C:10}  {M:0101111100,F:110,U:1,S:0,C:10}  {M:0111100110,F:110,U:1,S:0,C:10}  {M:1011101001,F:110,U:1,S:1,C:10}  {M:1101010101,F:110,U:1,S:1,C:10}  {M:0111110011,F:110,U:1,S:1,C:10}  {M:1011000110,F:110,U:1,S:0,C:10}  {M:1010000110,F:110,U:1,S:0,C:10}  {M:1100000111,F:110,U:1,S:1,C:10}  {M:1110001101,F:110,U:1,S:1,C:10}  {M:1000111000,F:110,U:1,S:0,C:10}  {M:1100000101,F:110,U:1,S:1,C:10}  {M:1000101010,F:110,U:1,S:0,C:10}  {M:1010111111,F:110,U:1,S:1,C:10}  {M:0101001111,F:110,U:1,S:1,C:10}  {M:1101011010,F:110,U:1,S:0,C:10}  {M:1001110101,F:110,U:1,S:1,C:10}  {M:1111010101,F:110,U:1,S:1,C:10}  {M:1000110010,F:110,U:1,S:0,C:10}  {M:0011111010,F:110,U:1,S:0,C:10}  {M:0111101100,F:110,U:1,S:0,C:10}  {M:1100011100,F:110,U:1,S:0,C:10}  {M:1010111011,F:110,U:1,S:1,C:10}  {M:1100000001,F:110,U:1,S:1,C:10}  {M:1011001101,F:110,U:1,S:1,C:10}  {M:1000100110,F:110,U:1,S:0,C:10}  {M:0100011001,F:110,U:1,S:1,C:10}  {M:1100011010,F:110,U:1,S:0,C:10}  {M:0011011010,F:110,U:1,S:0,C:10}  {M:1011100100,F:110,U:1,S:0,C:10}  {M:1000010001,F:110,U:1,S:1,C:10}  {M:1110101001,F:110,U:1,S:1,C:10}  {M:0110111100,F:110,U:1,S:0,C:10}  {M:1000100010,F:110,U:1,S:0,C:10}  {M:1110101110,F:110,U:1,S:0,C:10}  {M:1111001010,F:110,U:1,S:0,C:10}  {M:1011111011,F:110,U:1,S:1,C:10}  {M:0101110011,F:110,U:1,S:1,C:10}  {M:0110011010,F:110,U:1,S:0,C:10}  {M:1110100000,F:110,U:1,S:0,C:10}  {M:0100110000,F:110,U:1,S:0,C:10}  {M:0100011010,F:110,U:1,S:0,C:10}  {M:1100001101,F:110,U:1,S:1,C:10}  {M:1100010110,F:110,U:1,S:0,C:10}  {M:1101110011,F:110,U:1,S:1,C:10}  {M:1010010110,F:110,U:1,S:0,C:10}  {M:1010111001,F:110,U:1,S:1,C:10}  {M:0110000000,F:110,U:1,S:0,C:10}  {M:0110010000,F:110,U:1,S:0,C:10}  {M:1110101000,F:110,U:1,S:0,C:10}  {M:1001001100,F:110,U:1,S:0,C:10}  {M:1001111101,F:110,U:1,S:1,C:10}  {M:0111000100,F:110,U:1,S:0,C:10}  {M:0011010100,F:110,U:1,S:0,C:10}  {M:1011100110,F:110,U:1,S:0,C:10}  {M:1111011110,F:110,U:1,S:0,C:10}  {M:1000010001,F:110,U:1,S:1,C:10}  {M:1101110101,F:110,U:1,S:1,C:10}  {M:1001100011,F:110,U:1,S:1,C:10}  {M:1111000100,F:110,U:1,S:0,C:10}  {M:1010010100,F:110,U:1,S:0,C:10}  {M:0101110101,F:110,U:1,S:1,C:10}  {M:0011111000,F:110,U:1,S:0,C:10}  {M:1110011101,F:110,U:1,S:1,C:10}  {M:1101011011,F:110,U:1,S:1,C:10}  {M:1111010101,F:110,U:1,S:1,C:10}  {M:0011001111,F:110,U:1,S:1,C:10}  {M:1111000000,F:110,U:1,S:0,C:10}  {M:1110011011,F:110,U:1,S:1,C:10}  {M:1011000000,F:110,U:1,S:0,C:10}  {M:1100110001,F:110,U:1,S:1,C:10}  {M:1000101100,F:110,U:1,S:0,C:10}  {M:1010101110,F:110,U:1,S:0,C:10}  {M:1010111100,F:110,U:1,S:0,C:10}  {M:0011111111,F:110,U:1,S:1,C:10}  {M:1000111110,F:110,U:1,S:0,C:10}  {M:0101110101,F:110,U:1,S:1,C:10}  {M:0100110001,F:110,U:1,S:1,C:10}  {M:1011100011,F:110,U:1,S:1,C:10}  {M:0101001100,F:110,U:1,S:0,C:10}  {M:1010011011,F:110,U:1,S:1,C:10}  {M:0110000110,F:110,U:1,S:0,C:10}  {M:1010100011,F:110,U:1,S:1,C:10}  {M:0100010110,F:110,U:1,S:0,C:10}  {M:1101000001,F:110,U:1,S:1,C:10}  {M:0111011011,F:110,U:1,S:1,C:10}  {M:1100110001,F:110,U:1,S:1,C:10}  {M:1010000100,F:110,U:1,S:0,C:10}  {M:1010000001,F:110,U:1,S:1,C:10}  {M:0101100101,F:110,U:1,S:1,C:10}  {M:1001000111,F:110,U:1,S:1,C:10}  {M:1001001110,F:110,U:1,S:0,C:10}  {M:1101011100,F:110,U:1,S:0,C:10}  {M:0111101001,F:110,U:1,S:1,C:10}  {M:1001010100,F:110,U:1,S:0,C:10}  {M:1100010101,F:110,U:1,S:1,C:10}  {M:0111011111,F:110,U:1,S:1,C:10}  {M:1010010110,F:110,U:1,S:0,C:10}  {M:0110001100,F:110,U:1,S:0,C:10}  {M:0110001001,F:110,U:1,S:1,C:10}  {M:0110000100,F:110,U:1,S:0,C:10}  {M:1011010110,F:110,U:1,S:0,C:10}  {M:0011110010,F:110,U:1,S:0,C:10}  {M:0101110011,F:110,U:1,S:1,C:10}  {M:0110100010,F:110,U:1,S:0,C:10}  {M:1010100000,F:110,U:1,S:0,C:10}  {M:1000010000,F:110,U:1,S:0,C:10}  {M:1111100011,F:110,U:1,S:1,C:10}  {M:1110100111,F:110,U:1,S:1,C:10}  {M:1101110101,F:110,U:1,S:1,C:10}  {M:1100111011,F:110,U:1,S:1,C:10}  {M:0100100011,F:110,U:1,S:1,C:10}  {M:1101110110,F:110,U:1,S:0,C:10}  {M:0011110011,F:110,U:1,S:1,C:10}  {M:1111010010,F:110,U:1,S:0,C:10}  {M:1101110101,F:110,U:1,S:1,C:10}  {M:0101100001,F:110,U:1,S:1,C:10}  {M:0110101001,F:110,U:1,S:1,C:10}  {M:0111101100,F:110,U:1,S:0,C:10}  {M:0101000100,F:110,U:1,S:0,C:10}  {M:0100100110,F:110,U:1,S:0,C:10}  {M:1100100010,F:110,U:1,S:0,C:10}  {M:1111001011,F:110,U:1,S:1,C:10}  {M:1111000111,F:110,U:1,S:1,C:10}  {M:1110101000,F:110,U:1,S:0,C:10}  {M:1000110001,F:110,U:1,S:1,C:10}  {M:1111011110,F:110,U:1,S:0,C:10}  {M:1101100110,F:110,U:1,S:0,C:10}  {M:1010111111,F:110,U:1,S:1,C:10}  {M:1110101010,F:110,U:1,S:0,C:10}  {M:1111000111,F:110,U:1,S:1,C:10}  {M:1000110011,F:110,U:1,S:1,C:10}  {M:1000000100,F:110,U:1,S:0,C:10}  {M:1100000010,F:110,U:1,S:0,C:10}  {M:1001000011,F:110,U:1,S:1,C:10}  {M:1111010010,F:110,U:1,S:0,C:10}  {M:1001101101,F:110,U:1,S:1,C:10}  {M:1010100001,F:110,U:1,S:1,C:10}  {M:0110110111,F:110,U:1,S:1,C:10}  {M:1011100010,F:110,U:1,S:0,C:10}  {M:0111010110,F:110,U:1,S:0,C:10}  {M:1010111100,F:110,U:1,S:0,C:10}  {M:1011000100,F:110,U:1,S:0,C:10}  {M:1101000001,F:110,U:1,S:1,C:10}  {M:1101111000,F:110,U:1,S:0,C:10}  {M:0011100101,F:110,U:1,S:1,C:10}  {M:0110110111,F:110,U:1,S:1,C:10}  {M:1001110001,F:110,U:1,S:1,C:10}  {M:1100111100,F:110,U:1,S:0,C:10}  {M:0110000111,F:110,U:1,S:1,C:10}  {M:0101000001,F:110,U:1,S:1,C:10}  {M:0100000000,F:110,U:1,S:0,C:10}  {M:1101101010,F:110,U:1,S:0,C:10}  {M:1111100010,F:110,U:1,S:0,C:10}  {M:0100001111,F:110,U:1,S:1,C:10}  {M:1100101011,F:110,U:1,S:1,C:10}  {M:1110100001,F:110,U:1,S:1,C:10}  {M:1101010001,F:110,U:1,S:1,C:10}  {M:0011010101,F:110,U:1,S:1,C:10}  {M:0110101111,F:110,U:1,S:1,C:10}  {M:1000000101,F:110,U:1,S:1,C:10}  {M:1000000101,F:110,U:1,S:1,C:10}  {M:0101001010,F:110,U:1,S:0,C:10}  {M:1110100111,F:110,U:1,S:1,C:10}  {M:1001001011,F:110,U:1,S:1,C:10}  {M:0101110100,F:110,U:1,S:0,C:10}  {M:0011001100,F:110,U:1,S:0,C:10}  {M:1100010011,F:110,U:1,S:1,C:10}  {M:1111100110,F:110,U:1,S:0,C:10}  {M:1110100000,F:110,U:1,S:0,C:10}  {M:1110111100,F:110,U:1,S:0,C:10}  {M:1011011010,F:110,U:1,S:0,C:10}  {M:0110010001,F:110,U:1,S:1,C:10}  {M:1110111011,F:110,U:1,S:1,C:10}  {M:1100000000,F:110,U:1,S:0,C:10}  {M:1110100000,F:110,U:1,S:0,C:10}  {M:1101110001,F:110,U:1,S:1,C:10}  {M:0100011010,F:110,U:1,S:0,C:10}  {M:1010011100,F:110,U:1,S:0,C:10}  {M:0100101110,F:110,U:1,S:0,C:10}  {M:0100100100,F:110,U:1,S:0,C:10}  {M:0011011001,F:110,U:1,S:1,C:10}  {M:0110100110,F:110,U:1,S:0,C:10}  {M:1101011110,F:110,U:1,S:0,C:10}  {M:1000100010,F:110,U:1,S:0,C:10}  {M:1101100110,F:110,U:1,S:0,C:10}  {M:0101010100,F:110,U:1,S:0,C:10}  {M:1000101000,F:110,U:1,S:0,C:10}  {M:1110010101,F:110,U:1,S:1,C:10}  {M:0101101111,F:110,U:1,S:1,C:10}  {M:1001000010,F:110,U:1,S:0,C:10}  {M:0110100010,F:110,U:1,S:0,C:10}  {M:1110001001,F:110,U:1,S:1,C:10}  {M:0110110000,F:110,U:1,S:0,C:10}  {M:0101001100,F:110,U:1,S:0,C:10}  {M:0101101100,F:110,U:1,S:0,C:10}  {M:1010011000,F:110,U:1,S:0,C:10}  {M:0011101001,F:110,U:1,S:1,C:10}  {M:1011111111,F:110,U:1,S:1,C:10}  {M:1000110111,F:110,U:1,S:1,C:10}  {M:1001110011,F:110,U:1,S:1,C:10}  {M:1011011101,F:110,U:1,S:1,C:10}  {M:0011101100,F:110,U:1,S:0,C:10}  {M:1010101111,F:110,U:1,S:1,C:10}  {M:1000010001,F:110,U:1,S:1,C:10}  {M:1001111100,F:110,U:1,S:0,C:10}  {M:0100101010,F:110,U:1,S:0,C:10}  {M:0110101100,F:110,U:1,S:0,C:10}  {M:0111101000,F:110,U:1,S:0,C:10}  {M:1001111101,F:110,U:1,S:1,C:10}  {M:1011111110,F:110,U:1,S:0,C:10}  {M:1111100010,F:110,U:1,S:0,C:10}  {M:0101101011,F:110,U:1,S:1,C:10}  {M:1100011100,F:110,U:1,S:0,C:10}  {M:0011010110,F:110,U:1,S:0,C:10}  {M:0111100010,F:110,U:1,S:0,C:10}  {M:1100000001,F:110,U:1,S:1,C:10}  {M:1000111000,F:110,U:1,S:0,C:10}  {M:1100101100,F:110,U:1,S:0,C:10}  {M:1101011010,F:110,U:1,S:0,C:10}  {M:1100011101,F:110,U:1,S:1,C:10}  {M:1000011000,F:110,U:1,S:0,C:10}  {M:0100100001,F:110,U:1,S:1,C:10}  {M:0100111010,F:110,U:1,S:0,C:10}  {M:1110110110,F:110,U:1,S:0,C:10}  {M:0101010011,F:110,U:1,S:1,C:10}  {M:0011111001,F:110,U:1,S:1,C:10}  {M:0111100001,F:110,U:1,S:1,C:10}  {M:0111111111,F:110,U:1,S:1,C:10}  {M:0011100111,F:110,U:1,S:1,C:10}  {M:0110010001,F:110,U:1,S:1,C:10}  {M:0100000011,F:110,U:1,S:1,C:10}  {M:1001101011,F:110,U:1,S:1,C:10}  {M:0111101101,F:110,U:1,S:1,C:10}  {M:1000011000,F:110,U:1,S:0,C:10}  {M:1011111100,F:110,U:1,S:0,C:10}  {M:0110001100,F:110,U:1,S:0,C:10}  {M:1000000101,F:110,U:1,S:1,C:10}  {M:1000001000,F:110,U:1,S:0,C:10}  {M:1100100110,F:110,U:1,S:0,C:10}  {M:1110111010,F:110,U:1,S:0,C:10}  {M:0101001101,F:110,U:1,S:1,C:10}  {M:0101101111,F:110,U:1,S:1,C:10}  {M:1001011010,F:110,U:1,S:0,C:10}  {M:1110001101,F:110,U:1,S:1,C:10}  {M:0110001101,F:110,U:1,S:1,C:10}  {M:1001110111,F:110,U:1,S:1,C:10}  {M:0110010110,F:110,U:1,S:0,C:10}  {M:1010110100,F:110,U:1,S:0,C:10}  {M:0110110101,F:110,U:1,S:1,C:10}  {M:1000010111,F:110,U:1,S:1,C:10}  {M:1110100010,F:110,U:1,S:0,C:10}  {M:1000010100,F:110,U:1,S:0,C:10}  {M:1001100000,F:110,U:1,S:0,C:10}  {M:1000101101,F:110,U:1,S:1,C:10}  {M:0111100100,F:110,U:1,S:0,C:10}  {M:1101001101,F:110,U:1,S:1,C:10}  {M:0111101001,F:110,U:1,S:1,C:10}  {M:1010000010,F:110,U:1,S:0,C:10}  {M:1110000011,F:110,U:1,S:1,C:10}  {M:0011101100,F:110,U:1,S:0,C:10}  {M:0101110100,F:110,U:1,S:0,C:10}  {M:1110011100,F:110,U:1,S:0,C:10}  {M:1110101111,F:110,U:1,S:1,C:10}  {M:1010100001,F:110,U:1,S:1,C:10}  {M:1001111101,F:110,U:1,S:1,C:10}  {M:0110010010,F:110,U:1,S:0,C:10}  {M:0101000001,F:110,U:1,S:1,C:10}  {M:1011111011,F:110,U:1,S:1,C:10}  {M:0101010001,F:110,U:1,S:1,C:10}  {M:1101100011,F:110,U:1,S:1,C:10}  {M:1110010011,F:110,U:1,S:1,C:10}  {M:0101010010,F:110,U:1,S:0,C:10}  {M:0101000110,F:110,U:1,S:0,C:10}  {M:0101100111,F:110,U:1,S:1,C:10}  {M:0101011100,F:110,U:1,S:0,C:10}  {M:1011101111,F:110,U:1,S:1,C:10}  {M:0110011101,F:110,U:1,S:1,C:10}  {M:1010001111,F:110,U:1,S:1,C:10}  {M:0110010111,F:110,U:1,S:1,C:10}  {M:1000011011,F:110,U:1,S:1,C:10}  {M:1001000011,F:110,U:1,S:1,C:10}  {M:1011101001,F:110,U:1,S:1,C:10}  {M:1001110111,F:110,U:1,S:1,C:10}  {M:1100011001,F:110,U:1,S:1,C:10}  
+
+
