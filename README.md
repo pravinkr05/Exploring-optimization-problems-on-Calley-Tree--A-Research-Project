@@ -39,8 +39,8 @@ Cayley trees have gained significance in various domains, particularly in optimi
   
   ### Clone and Run
   
-  1. Clone this repository to your local machine:  ```bash git clone https://github.com/pravinkr05/cayley-tree-research.git```
-  2. Open the project in Visual Studio Code: ```bash code Cayley-tree-research```
+  1. Clone this repository to your local machine:  ```bash git clone https://github.com/pravinkr05/project-name```
+  2. Open the project in Visual Studio Code: ```bash code project-name```
   3. Compile and run using the g++ compiler: ```bash g++ -o main main.cpp ./main```
 
 ## Usage
@@ -58,5 +58,5 @@ This project is licensed under the [MIT License](LICENSE.md).
 The project is currently undergoing optimization and refinement.
 
 ## Contact
-For inquiries or collaboration opportunities, please get in touch with [pkb3468@gmail.com](pkb3468@gmail.com).
+For inquiries or collaboration opportunities, please get in touch with [pkr093093@gmail.com](pkr093093@gmail.com).
 
