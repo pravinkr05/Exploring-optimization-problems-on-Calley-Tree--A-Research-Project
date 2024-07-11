@@ -1,7 +1,7 @@
 # Exploring optimization problems on Calley Tree: Theory and Experiments - A research project (Final Year BTech Project)
 
 ## Overview
-This research project focuses on exploring Cayley trees and their applications in optimization problems. The project is currently in progress, aiming to contribute valuable insights to the field.
+This research project focuses on exploring Cayley trees and their applications in optimization problems. The project theory part is finally completed now focusing on hardware simulation part and aiming to contribute valuable insights to the field.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -29,6 +29,7 @@ Cayley trees have gained significance in various domains, particularly in optimi
 
 ## Technologies Used
 - C++
+- Latex
 
 ## Installation
 
